@@ -6,7 +6,7 @@ This repo holds **no skill files**. `skills.json` lists where each skill lives i
 
 ## 1. Work out what to get
 
-- Read `skills.json` (in the repo root; if you only have the GitHub link, fetch `https://github.com/OWNER/claude-skill-pack` with git or read the file through the GitHub page).
+- Read `skills.json` (in the repo root; if you only have the GitHub link, fetch `https://github.com/Agentic-Brain-Internal/claude-skill-pack` with git or read the file through the GitHub page).
 - "All the skills", "everything", "the pack" means every entry with `"group": "core"`. In Claude Code it also means the `"group": "builtin"` entries, because Claude Code doesn't come with them (step 3).
 - If the student names skills, match them to `id` or `name`. Tell them about any name you can't match.
 - `"group": "builtin"` entries are already part of the Claude app. You only install them in Claude Code.
@@ -29,7 +29,7 @@ Claude Code on the web runs in a temporary cloud machine, so anything you instal
 Use the pack's plugin marketplace. Each core skill is its own plugin, and Claude Code downloads it from the author's repo.
 
 ```
-claude plugin marketplace add https://github.com/OWNER/claude-skill-pack.git
+claude plugin marketplace add https://github.com/Agentic-Brain-Internal/claude-skill-pack.git
 claude plugin install <name>@agentic-brain-skill-pack
 ```
 
@@ -44,7 +44,7 @@ claude plugin install document-skills@anthropic-agent-skills
 
 On Windows the first line can fail with "Filename too long". Ask the student before changing their git settings, then run `git config --global core.longpaths true` (a standard Windows git setting for long file paths) and try again.
 
-`skill-creator` goes in as a folder. If you don't have a local copy of this repo, clone it to a temporary folder first (`git clone --depth 1 https://github.com/OWNER/claude-skill-pack.git`), then:
+`skill-creator` goes in as a folder. If you don't have a local copy of this repo, clone it to a temporary folder first (`git clone --depth 1 https://github.com/Agentic-Brain-Internal/claude-skill-pack.git`), then:
 
 ```
 python <repo>/tools/get_skills.py install --only skill-creator
@@ -68,7 +68,7 @@ The Claude app can't install a skill from inside a conversation. The student has
 
 1. Check you can reach GitHub: `git ls-remote https://github.com/blader/humanizer.git HEAD`.
    - If that fails, stop. Tell the student their account doesn't let Claude reach GitHub. They can use the plugin route below, ask whoever runs their company's Claude account to allow github.com (Organization settings > Capabilities), or ask in Claude Code on their own computer.
-2. Get this repo: `git clone --depth 1 https://github.com/OWNER/claude-skill-pack.git`
+2. Get this repo: `git clone --depth 1 https://github.com/Agentic-Brain-Internal/claude-skill-pack.git`
 3. Build the zips. In Cowork, put them in the student's folder. In chat, put them wherever you place files for the student to download (for example `/mnt/user-data/outputs`).
    ```
    python claude-skill-pack/tools/get_skills.py zip --dest <output folder>
@@ -80,7 +80,7 @@ The Claude app can't install a skill from inside a conversation. The student has
    3. Switch the skill on. Repeat for each zip.
    - Entries with `"builtin_in_app": "check-discover"` may already be listed under Anthropic's skills in **Customize > Skills**. Say so: if it's there, switch it on and skip that zip.
    - Upload needs **Settings > Capabilities > Code execution and file creation** on.
-5. Also mention the plugin route as an alternative: **Customize > Plugins > Add > Add marketplace**, enter `OWNER/claude-skill-pack`, then install each skill.
+5. Also mention the plugin route as an alternative: **Customize > Plugins > Add > Add marketplace**, enter `Agentic-Brain-Internal/claude-skill-pack`, then install each skill.
 
 If you can't offer zip files for download, the plugin route is the way in.
 

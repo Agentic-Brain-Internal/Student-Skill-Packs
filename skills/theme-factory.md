@@ -25,12 +25,12 @@ Show me the themes, then apply the one that suits a construction supplier to thi
 
 - First look in **Customize > Skills** for it under the skills from Anthropic. If it's there, switch it on and you're done.
 - Otherwise ask Claude to get it for you (see the [README](../README.md#get-the-skills)). Claude makes the file `theme-factory.zip`; upload it in **Customize > Skills > + > Create skill > Upload a skill**, then switch it on.
-- Or install it as a plugin: **Customize > Plugins > Add > Add marketplace**, enter `OWNER/claude-skill-pack`, then install **theme-factory**.
+- Or install it as a plugin: **Customize > Plugins > Add > Add marketplace**, enter `Agentic-Brain-Internal/claude-skill-pack`, then install **theme-factory**.
 
 **Claude Code**
 
 ```
-claude plugin marketplace add https://github.com/OWNER/claude-skill-pack.git
+claude plugin marketplace add https://github.com/Agentic-Brain-Internal/claude-skill-pack.git
 claude plugin install theme-factory@agentic-brain-skill-pack
 ```
 

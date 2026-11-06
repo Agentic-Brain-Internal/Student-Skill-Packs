@@ -24,12 +24,12 @@ Write a two-paragraph update to the team about the new delivery schedule. Use th
 **Claude app (chat and Cowork)**
 
 - Ask Claude to get it for you (see the [README](../README.md#get-the-skills)). Claude makes the file `stop-slop.zip`; upload it in **Customize > Skills > + > Create skill > Upload a skill**, then switch it on.
-- Or install it as a plugin: **Customize > Plugins > Add > Add marketplace**, enter `OWNER/claude-skill-pack`, then install **stop-slop**.
+- Or install it as a plugin: **Customize > Plugins > Add > Add marketplace**, enter `Agentic-Brain-Internal/claude-skill-pack`, then install **stop-slop**.
 
 **Claude Code**
 
 ```
-claude plugin marketplace add https://github.com/OWNER/claude-skill-pack.git
+claude plugin marketplace add https://github.com/Agentic-Brain-Internal/claude-skill-pack.git
 claude plugin install stop-slop@agentic-brain-skill-pack
 ```
 

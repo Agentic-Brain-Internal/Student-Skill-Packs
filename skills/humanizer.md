@@ -24,12 +24,12 @@ Use the humanizer skill on this draft. Keep the meaning and the facts exactly as
 **Claude app (chat and Cowork)**
 
 - Ask Claude to get it for you (see the [README](../README.md#get-the-skills)). Claude makes the file `humanizer.zip`; upload it in **Customize > Skills > + > Create skill > Upload a skill**, then switch it on.
-- Or install it as a plugin: **Customize > Plugins > Add > Add marketplace**, enter `OWNER/claude-skill-pack`, then install **humanizer**.
+- Or install it as a plugin: **Customize > Plugins > Add > Add marketplace**, enter `Agentic-Brain-Internal/claude-skill-pack`, then install **humanizer**.
 
 **Claude Code**
 
 ```
-claude plugin marketplace add https://github.com/OWNER/claude-skill-pack.git
+claude plugin marketplace add https://github.com/Agentic-Brain-Internal/claude-skill-pack.git
 claude plugin install humanizer@agentic-brain-skill-pack
 ```
 

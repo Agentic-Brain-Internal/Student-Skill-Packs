@@ -25,12 +25,12 @@ Write this week's project update in Progress, Plans, Problems format from these 
 
 - First look in **Customize > Skills** for it under the skills from Anthropic. If it's there, switch it on and you're done.
 - Otherwise ask Claude to get it for you (see the [README](../README.md#get-the-skills)). Claude makes the file `internal-comms.zip`; upload it in **Customize > Skills > + > Create skill > Upload a skill**, then switch it on.
-- Or install it as a plugin: **Customize > Plugins > Add > Add marketplace**, enter `OWNER/claude-skill-pack`, then install **internal-comms**.
+- Or install it as a plugin: **Customize > Plugins > Add > Add marketplace**, enter `Agentic-Brain-Internal/claude-skill-pack`, then install **internal-comms**.
 
 **Claude Code**
 
 ```
-claude plugin marketplace add https://github.com/OWNER/claude-skill-pack.git
+claude plugin marketplace add https://github.com/Agentic-Brain-Internal/claude-skill-pack.git
 claude plugin install internal-comms@agentic-brain-skill-pack
 ```
 

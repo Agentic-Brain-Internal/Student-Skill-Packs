@@ -2,7 +2,7 @@
   "pack": "Agentic Brain Claude Skill Pack",
   "pack_version": "1.0.0",
   "updated": "2026-11-06",
-  "repo": "OWNER/claude-skill-pack",
+  "repo": "Agentic-Brain-Internal/claude-skill-pack",
   "notes": "This file lists skills that live in other people's GitHub repos. Nothing here is a copy. Each entry says where the skill lives, who made it, its licence, and how to get it on each Claude surface. INSTALL-FOR-CLAUDE.md explains the fields.",
   "groups": {
     "core": "Writing and everyday skills. 'Get all the skills' means this group.",
@@ -25,7 +25,7 @@
       "license_file": "LICENSE",
       "fetch": true,
       "plugin": {
-        "marketplace": "OWNER/claude-skill-pack",
+        "marketplace": "Agentic-Brain-Internal/claude-skill-pack",
         "name": "humanizer"
       },
       "summary": "Rewrites text that sounds like AI wrote it so it reads like a person wrote it, without changing what it says. It works from Wikipedia's guide to the signs of AI writing: forced lists of three, 'it's not X, it's Y' lines, puffed-up claims, stock words and one-line closers.",
@@ -51,7 +51,7 @@
       "license_file": "LICENSE",
       "fetch": true,
       "plugin": {
-        "marketplace": "OWNER/claude-skill-pack",
+        "marketplace": "Agentic-Brain-Internal/claude-skill-pack",
         "name": "stop-slop"
       },
       "summary": "A short, strict set of rules for writing that doesn't sound machine-made: cut filler, use active voice, name specific things, vary sentence length, no em dashes. It comes with lists of phrases and sentence shapes to avoid, and scores a draft before handing it back.",
@@ -77,7 +77,7 @@
       "license_file": "LICENSE",
       "fetch": true,
       "plugin": {
-        "marketplace": "OWNER/claude-skill-pack",
+        "marketplace": "Agentic-Brain-Internal/claude-skill-pack",
         "name": "prompt-master"
       },
       "summary": "Writes a tight, ready-to-paste prompt for another AI tool: ChatGPT, Gemini, Midjourney, an image or video tool, and so on. It works out which tool you're aiming at and what you actually want, asks only what it needs, and hands back one prompt.",
@@ -103,7 +103,7 @@
       "license_file": "LICENSE",
       "fetch": true,
       "plugin": {
-        "marketplace": "OWNER/claude-skill-pack",
+        "marketplace": "Agentic-Brain-Internal/claude-skill-pack",
         "name": "copywriting"
       },
       "summary": "Writes marketing copy for web pages: home page, landing page, pricing, product and about pages. It asks who the page is for and what they should do next, then writes headlines, sections and calls to action, with options to choose from.",
@@ -129,7 +129,7 @@
       "license_file": "LICENSE",
       "fetch": true,
       "plugin": {
-        "marketplace": "OWNER/claude-skill-pack",
+        "marketplace": "Agentic-Brain-Internal/claude-skill-pack",
         "name": "copy-editing"
       },
       "summary": "Edits copy you already have instead of starting over. It goes through the text in several passes (clarity, voice, proof, specifics, flow) and tells you what it changed and why.",
@@ -155,7 +155,7 @@
       "license_file": "LICENSE",
       "fetch": true,
       "plugin": {
-        "marketplace": "OWNER/claude-skill-pack",
+        "marketplace": "Agentic-Brain-Internal/claude-skill-pack",
         "name": "emails"
       },
       "summary": "Plans and writes a series of emails: welcome emails, follow-ups after a quote, win-back emails for lapsed customers. It sets the order, timing and goal of each email, then writes them.",
@@ -181,7 +181,7 @@
       "license_file": "LICENSE",
       "fetch": true,
       "plugin": {
-        "marketplace": "OWNER/claude-skill-pack",
+        "marketplace": "Agentic-Brain-Internal/claude-skill-pack",
         "name": "social"
       },
       "summary": "Writes and plans posts for LinkedIn, X, Instagram, TikTok and Facebook. It knows how each platform differs and can turn one piece of content into a week of posts.",
@@ -207,7 +207,7 @@
       "license_file": "LICENSE",
       "fetch": true,
       "plugin": {
-        "marketplace": "OWNER/claude-skill-pack",
+        "marketplace": "Agentic-Brain-Internal/claude-skill-pack",
         "name": "customer-research"
       },
       "summary": "Turns raw customer material into findings: interview notes, survey answers, reviews, support tickets. It pulls out the problems, wants and exact phrases customers use, so your copy and decisions use their words.",
@@ -369,7 +369,7 @@
       "fetch": true,
       "builtin_in_app": "check-discover",
       "plugin": {
-        "marketplace": "OWNER/claude-skill-pack",
+        "marketplace": "Agentic-Brain-Internal/claude-skill-pack",
         "name": "internal-comms"
       },
       "summary": "Writes the messages that go around a company: status reports, leadership updates, project updates, newsletters, FAQs and incident reports. It comes with example formats, including 'Progress, Plans, Problems' updates.",
@@ -396,7 +396,7 @@
       "fetch": true,
       "builtin_in_app": "check-discover",
       "plugin": {
-        "marketplace": "OWNER/claude-skill-pack",
+        "marketplace": "Agentic-Brain-Internal/claude-skill-pack",
         "name": "theme-factory"
       },
       "summary": "Gives decks, documents and pages a consistent look. It has ten ready-made colour and font themes, shows them to you as a sample sheet, and can make a new theme to match what you describe.",
@@ -423,7 +423,7 @@
       "fetch": true,
       "builtin_in_app": "check-discover",
       "plugin": {
-        "marketplace": "OWNER/claude-skill-pack",
+        "marketplace": "Agentic-Brain-Internal/claude-skill-pack",
         "name": "canvas-design"
       },
       "summary": "Makes one-page visual pieces as PNG or PDF: posters, flyers, simple graphics. It picks a design direction first, then builds the piece to match, with a set of fonts included.",
@@ -450,7 +450,7 @@
       "fetch": true,
       "builtin_in_app": "check-discover",
       "plugin": {
-        "marketplace": "OWNER/claude-skill-pack",
+        "marketplace": "Agentic-Brain-Internal/claude-skill-pack",
         "name": "discernment-nudge"
       },
       "summary": "After Claude gives you an answer you might act on (advice, a plan, numbers, a claim), it adds two or three short questions to help you check it: what to verify, where the reasoning could be weak, what context it might be missing.",
