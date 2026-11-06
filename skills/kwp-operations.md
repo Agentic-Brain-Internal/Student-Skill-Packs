@@ -23,7 +23,7 @@ Write up our goods-in process as a step-by-step document from these notes.
 
 **Claude app (chat and Cowork)**
 
-- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **operations** from Anthropic and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **operations**.
+- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **operations** in Anthropic's plugins and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **operations**.
 
 **Claude Code**
 

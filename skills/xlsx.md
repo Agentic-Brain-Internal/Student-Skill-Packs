@@ -23,7 +23,7 @@ Build me an Excel tracker for supplier deliveries with a column for days late th
 
 **Claude app (chat and Cowork)**
 
-- Nothing to do. It's built in and loads by itself when you ask for this kind of file. **Settings > Capabilities > Code execution and file creation** must be on (it is by default).
+- Nothing to do. It's built in and loads by itself when you ask for this kind of file. **Settings > Capabilities > Code execution and file creation** must be on. It usually is; if you can't switch it on, ask whoever runs your company's Claude account.
 
 **Claude Code**
 
@@ -31,7 +31,7 @@ Build me an Excel tracker for supplier deliveries with a column for days late th
 claude plugin marketplace add https://github.com/anthropics/skills.git
 claude plugin install document-skills@anthropic-agent-skills
 ```
-That installs Anthropic's Word, Excel, PowerPoint and PDF skills together.
+That installs Anthropic's Word, Excel, PowerPoint and PDF skills together. On Windows, if the first line fails with "Filename too long", run `git config --global core.longpaths true` and try again.
 
 ## Good to know
 

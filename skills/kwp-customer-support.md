@@ -23,7 +23,7 @@ Draft a reply to this complaint and tell me if it should be escalated.
 
 **Claude app (chat and Cowork)**
 
-- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **customer-support** from Anthropic and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **customer-support**.
+- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **customer-support** in Anthropic's plugins and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **customer-support**.
 
 **Claude Code**
 

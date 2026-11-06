@@ -23,7 +23,7 @@ Prep me for a call with Hendricks Construction tomorrow. Here's what I know: ...
 
 **Claude app (chat and Cowork)**
 
-- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **sales** from Anthropic and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **sales**.
+- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **sales** in Anthropic's plugins and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **sales**.
 
 **Claude Code**
 

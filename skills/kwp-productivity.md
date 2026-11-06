@@ -23,7 +23,7 @@ Helps you plan the day, keep a task list and build up notes about your work that
 
 **Claude app (chat and Cowork)**
 
-- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **productivity** from Anthropic and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **productivity**.
+- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **productivity** in Anthropic's plugins and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **productivity**.
 
 **Claude Code**
 

@@ -112,7 +112,7 @@
         "You have a page that gets visits but not enquiries and want fresh copy to test."
       ],
       "try": "Use the copywriting skill to rewrite the hero section of our trade-account page. Here's the current text: ...",
-      "notes": "Part of Corey Haines's Marketing Skills collection. We list five of its skills; the full set of over 50 is in his repo."
+      "notes": "Part of Corey Haines's Marketing Skills collection on GitHub."
     },
     {
       "id": "copy-editing",
@@ -493,8 +493,8 @@
       "title": "Brand Voice (plugin)",
       "group": "role-packs",
       "category": "Everyone",
-      "author": "Tribe AI, published in Anthropic's plugin collection",
-      "author_url": "https://github.com/anthropics/knowledge-work-plugins/tree/main/partner-built/brand-voice",
+      "author": "Tribe AI",
+      "author_url": "https://www.tribe.ai",
       "repo": "anthropics/knowledge-work-plugins",
       "path": "partner-built/brand-voice",
       "ref": "main",
@@ -511,7 +511,7 @@
         "Several people write customer-facing text and it all sounds different."
       ],
       "try": "Generate brand voice guidelines from these five proposals and our website text.",
-      "notes": ""
+      "notes": "Built by Tribe AI and published in Anthropic's plugin collection."
     },
     {
       "id": "kwp-marketing",

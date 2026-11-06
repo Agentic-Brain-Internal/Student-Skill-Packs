@@ -2,7 +2,7 @@
 
 A hand-picked set of public Claude skills for students of the Agentic Brain Claude course, with a short guide to each one in plain English.
 
-Nothing in here is a copy of someone else's skill. This repo is a list of links plus our own notes. When you ask Claude to get the skills, it downloads each one straight from the person who made it, with their licence, and the [credits](CREDITS.md) name every author.
+Nothing in here is a copy of someone else's skill. This repo (a folder of files on GitHub) is a list of links plus our own notes. When you ask Claude to get the skills, it downloads each one straight from the person who made it, with their licence, and the [credits](CREDITS.md) name every author.
 
 ## Get the skills
 
@@ -16,17 +16,17 @@ What happens next depends on where you ask.
 
 **Claude Code.** Claude installs everything for you. Start a new session afterwards and the skills are ready.
 
-**Cowork.** Pick a folder for the task first. Claude downloads each skill and saves it as a zip in that folder. Then upload the zips yourself:
+**Cowork.** Pick a folder for the task first. Claude downloads each skill and saves it as a zip (one compressed file per skill) in that folder. Then upload the zips yourself:
 
 1. Open **Customize > Skills**.
 2. Click **+ > Create skill > Upload a skill** and choose one zip.
 3. Switch the skill on. Repeat for each zip.
 
-**Claude chat (claude.ai or the desktop app).** Same as Cowork: Claude makes the zips and gives them to you to download, then you upload them. Claude needs to be able to reach GitHub for this. If it says it can't, use Cowork, or ask whoever runs your company's Claude account to allow github.com (Organization settings > Capabilities).
+**Claude chat (claude.ai or the desktop app).** Same as Cowork: Claude makes the zips and gives them to you to download, then you upload them. Claude needs to be able to reach GitHub for this. If it says it can't, use the plugin route below, or ask whoever runs your company's Claude account to allow github.com (Organization settings > Capabilities).
 
-**Another way: install as plugins.** In the Claude app, open **Customize > Plugins > Add > Add marketplace** and enter `OWNER/claude-skill-pack`. Each skill in the core list is there as its own plugin, which installs straight from its author's repo. Install the ones you want.
+**Another way: install as plugins.** A plugin marketplace is a list of plugins that Claude can install for you. In the Claude app, open **Customize > Plugins > Add > Add marketplace** and enter `OWNER/claude-skill-pack`. Each skill in the core list is there as its own plugin, which installs straight from its author's repo. Install the ones you want.
 
-Uploading skills needs **Code execution and file creation** switched on in **Settings > Capabilities**. It's on by default.
+Uploading skills needs **Code execution and file creation** switched on in **Settings > Capabilities**. It usually is. If you can't switch it on, ask whoever runs your company's Claude account.
 
 ### Only want some?
 
@@ -102,7 +102,7 @@ A few skills in this pack do similar jobs: humanizer and stop-slop both clean up
 Authors improve their skills over time.
 
 - **Plugins** update from **Customize > Plugins** (or `claude plugin marketplace update` in Claude Code).
-- **Uploaded zips** don't update by themselves. Ask Claude to get the skills again, then upload the new zip over the old skill.
+- **Uploaded zips** don't update by themselves. Ask Claude to get the skills again, delete the old skill in **Customize > Skills**, and upload the new zip.
 
 ## Before you rely on a skill
 

@@ -27,12 +27,7 @@ I want to build a skill. Interview me about how I write our monthly customer new
 
 **Claude Code**
 
-Ask Claude to get all the skills from this pack (it's included in Claude Code), or:
-```
-claude plugin marketplace add https://github.com/anthropics/skills.git
-claude plugin install example-skills@anthropic-agent-skills
-```
-(`example-skills` brings a dozen of Anthropic's example skills, this one included.)
+When you ask Claude Code to get all the skills from this pack, it installs this one too. To get just this one, ask for it by name.
 
 ## Good to know
 

@@ -23,7 +23,7 @@ Review this supplier contract and list the clauses we should push back on.
 
 **Claude app (chat and Cowork)**
 
-- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **legal** from Anthropic and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **legal**.
+- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **legal** in Anthropic's plugins and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **legal**.
 
 **Claude Code**
 

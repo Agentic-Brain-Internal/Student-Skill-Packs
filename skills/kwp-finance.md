@@ -23,7 +23,7 @@ Explain the main variances between budget and actual in this spreadsheet.
 
 **Claude app (chat and Cowork)**
 
-- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **finance** from Anthropic and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **finance**.
+- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **finance** in Anthropic's plugins and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **finance**.
 
 **Claude Code**
 

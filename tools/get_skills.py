@@ -83,18 +83,24 @@ class Fetcher:
         return target
 
     def _run(self, *args, cwd=None):
-        return subprocess.run(args, cwd=cwd, stdout=subprocess.PIPE,
-                              stderr=subprocess.PIPE, text=True)
+        # Never let git stop to ask for a password: a moved or deleted repo
+        # should fail fast, not hang waiting for a sign-in window.
+        env = dict(os.environ, GIT_TERMINAL_PROMPT="0", GCM_INTERACTIVE="never")
+        return subprocess.run(args, cwd=cwd, stdin=subprocess.DEVNULL, stdout=subprocess.PIPE,
+                              stderr=subprocess.PIPE, text=True, errors="replace", env=env)
 
     def _git(self, repo, ref, paths, target):
         url = f"https://github.com/{repo}.git"
         # core.symlinks=false: a link in someone's repo becomes a small text file,
         # so it can never point us at a file elsewhere on this computer.
-        r = self._run(self.git, "-c", "core.symlinks=false", "clone", "--quiet", "--depth", "1",
+        # core.autocrlf=false: keep the authors' files byte-for-byte as published.
+        r = self._run(self.git, "-c", "core.symlinks=false", "-c", "core.autocrlf=false",
+                      "-c", "credential.helper=", "clone", "--quiet", "--depth", "1",
                       "--filter=blob:none", "--no-checkout", "--branch", ref, url, str(target))
         if r.returncode != 0:
             return False
         self._run(self.git, "config", "core.symlinks", "false", cwd=target)
+        self._run(self.git, "config", "core.autocrlf", "false", cwd=target)
         # Only check out the skill folders and licence files we need.
         r = self._run(self.git, "sparse-checkout", "set", "--no-cone", *paths, cwd=target)
         if r.returncode != 0:
@@ -117,7 +123,8 @@ class Fetcher:
                 if not any(_matches(rel, p) for p in paths):
                     continue
                 dest = (target / rel).resolve()
-                if not str(dest).startswith(str(target.resolve())):
+                root = target.resolve()
+                if os.path.commonpath([str(dest), str(root)]) != str(root):
                     continue  # refuse paths that escape the folder
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 with tar.extractfile(m) as src, open(dest, "wb") as out:
@@ -136,12 +143,13 @@ def _matches(rel, pattern):
 def sparse_paths(entries):
     paths = set()
     for s in entries:
+        # A leading "/" anchors each pattern to the repo root.
         if s["path"]:
-            paths.add(s["path"].strip("/") + "/*")
+            paths.add("/" + s["path"].strip("/") + "/*")
         else:
             paths.add("/*")
         if s.get("license_file"):
-            paths.add(s["license_file"])
+            paths.add("/" + s["license_file"].strip("/"))
     return sorted(paths)
 
 
@@ -153,11 +161,11 @@ def frontmatter(text):
         return None
     fm = m.group(1)
     keys = re.findall(r"^([A-Za-z0-9_-]+):", fm, re.M)
-    name = re.search(r"^name:\s*['\"]?([^'\"\n]+)['\"]?\s*$", fm, re.M)
+    name = re.search(r"^name:\s*['\"]?([^'\"\n#]+?)['\"]?\s*(#.*)?$", fm, re.M)
     desc = re.search(r"^description:\s*(.*?)(?=^[A-Za-z0-9_-]+:|\Z)", fm, re.M | re.S)
     d = desc.group(1).strip() if desc else ""
     if d[:1] in "|>":
-        d = d[1:].lstrip("-+")
+        d = d[1:].lstrip("-+0123456789")
     d = " ".join(line.strip() for line in d.strip().strip("'\"").splitlines()).strip()
     return {"keys": keys, "name": name.group(1).strip() if name else "", "description": d}
 
@@ -167,7 +175,8 @@ def check(folder, expected):
     skill_md = folder / "SKILL.md"
     if not skill_md.exists():
         return ["no SKILL.md"], warnings
-    fm = frontmatter(skill_md.read_text(encoding="utf-8", errors="replace"))
+    text = skill_md.read_text(encoding="utf-8-sig", errors="replace").replace("\r\n", "\n")
+    fm = frontmatter(text)
     if fm is None:
         return ["SKILL.md has no frontmatter"], warnings
     if fm["name"] != expected:
@@ -235,7 +244,11 @@ def main():
     args = ap.parse_args()
 
     manifest = load_manifest(args.manifest)
-    chosen = pick(manifest, set(args.groups.split(",")), args.only)
+    known = {s["group"] for s in manifest["skills"]}
+    groups = {x.strip() for x in args.groups.split(",") if x.strip()}
+    if groups - known:
+        sys.exit(f"Unknown group: {', '.join(sorted(groups - known))}. Groups are: {', '.join(sorted(known))}")
+    chosen = pick(manifest, groups, args.only)
 
     if args.mode == "list":
         for s in manifest["skills"]:
@@ -253,8 +266,8 @@ def main():
     dest.mkdir(parents=True, exist_ok=True)
 
     results = []
-    with tempfile.TemporaryDirectory(prefix="skillpack-") as tmp:
-        tmp = Path(tmp)
+    tmp = Path(tempfile.mkdtemp(prefix="skillpack-"))
+    try:
         fetcher = Fetcher(tmp / "src")
         staging = tmp / "built"
         staging.mkdir()
@@ -292,6 +305,9 @@ def main():
                         results.append((s, "ZIPPED", f"{zp} ({zp.stat().st_size // 1024} KB zipped){'; ' + note if note else ''}"))
                 except Exception as e:
                     results.append((s, "FAILED", str(e)))
+    finally:
+        # Windows can hold a lock on git files briefly; never let cleanup hide the results.
+        shutil.rmtree(tmp, ignore_errors=True)
 
     for s in skipped:
         why = "built into the Claude app; in Claude Code use Anthropic's plugin" if s["group"] == "builtin" else "plugin; install from a plugin marketplace"

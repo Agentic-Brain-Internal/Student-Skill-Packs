@@ -1,6 +1,6 @@
 # Brand Voice (plugin)
 
-By **[Tribe AI, published in Anthropic's plugin collection](https://github.com/anthropics/knowledge-work-plugins/tree/main/partner-built/brand-voice)**. Source: [anthropics/knowledge-work-plugins/partner-built/brand-voice](https://github.com/anthropics/knowledge-work-plugins/tree/main/partner-built/brand-voice). Licence: Apache-2.0.
+By **[Tribe AI](https://www.tribe.ai)**. Source: [anthropics/knowledge-work-plugins/partner-built/brand-voice](https://github.com/anthropics/knowledge-work-plugins/tree/main/partner-built/brand-voice). Licence: Apache-2.0.
 
 Role packs (optional) · Everyone
 
@@ -23,7 +23,7 @@ Generate brand voice guidelines from these five proposals and our website text.
 
 **Claude app (chat and Cowork)**
 
-- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **brand-voice** from Anthropic and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **brand-voice**.
+- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **brand-voice** in Anthropic's plugins and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **brand-voice**.
 
 **Claude Code**
 
@@ -32,6 +32,10 @@ claude plugin marketplace add https://github.com/anthropics/knowledge-work-plugi
 claude plugin install brand-voice@knowledge-work-plugins
 ```
 
+## Good to know
+
+Built by Tribe AI and published in Anthropic's plugin collection.
+
 ---
 
-This page is our own description. The skill belongs to Tribe AI, published in Anthropic's plugin collection; get it from [the source](https://github.com/anthropics/knowledge-work-plugins/tree/main/partner-built/brand-voice).
+This page is our own description. The skill belongs to Tribe AI; get it from [the source](https://github.com/anthropics/knowledge-work-plugins/tree/main/partner-built/brand-voice).

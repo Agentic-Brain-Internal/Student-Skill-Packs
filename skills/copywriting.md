@@ -35,7 +35,7 @@ claude plugin install copywriting@agentic-brain-skill-pack
 
 ## Good to know
 
-Part of Corey Haines's Marketing Skills collection. We list five of its skills; the full set of over 50 is in his repo.
+Part of Corey Haines's Marketing Skills collection on GitHub.
 
 ---
 

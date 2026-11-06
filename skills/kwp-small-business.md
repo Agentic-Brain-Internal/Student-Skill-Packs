@@ -23,7 +23,7 @@ Give me a cash-flow snapshot from this bank export and list the invoices I shoul
 
 **Claude app (chat and Cowork)**
 
-- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **small-business** from Anthropic and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **small-business**.
+- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **small-business** in Anthropic's plugins and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **small-business**.
 
 **Claude Code**
 

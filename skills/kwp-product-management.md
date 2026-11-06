@@ -23,7 +23,7 @@ Write a one-page spec for adding online ordering for trade customers.
 
 **Claude app (chat and Cowork)**
 
-- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **product-management** from Anthropic and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **product-management**.
+- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **product-management** in Anthropic's plugins and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **product-management**.
 
 **Claude Code**
 

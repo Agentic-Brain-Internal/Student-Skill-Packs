@@ -41,19 +41,20 @@ def how_to_get(s):
         code.append(f"```\nclaude plugin marketplace add https://github.com/{PACK}.git\nclaude plugin install {name}@{PACK_MKT}\n```")
     elif g == "builtin" and s.get("builtin_in_app") == "automatic":
         app.append("Nothing to do. It's built in and loads by itself when you ask for this kind of file. "
-                   "**Settings > Capabilities > Code execution and file creation** must be on (it is by default).")
+                   "**Settings > Capabilities > Code execution and file creation** must be on. It usually is; "
+                   "if you can't switch it on, ask whoever runs your company's Claude account.")
         code.append("```\nclaude plugin marketplace add https://github.com/anthropics/skills.git\n"
                     "claude plugin install document-skills@anthropic-agent-skills\n```\n"
-                    "That installs Anthropic's Word, Excel, PowerPoint and PDF skills together.")
+                    "That installs Anthropic's Word, Excel, PowerPoint and PDF skills together. "
+                    "On Windows, if the first line fails with \"Filename too long\", run "
+                    "`git config --global core.longpaths true` and try again.")
     elif g == "builtin":
         app.append("Open **Customize > Skills**, find it among the skills from Anthropic, and switch it on.")
-        code.append("Ask Claude to get all the skills from this pack (it's included in Claude Code), or:\n"
-                    "```\nclaude plugin marketplace add https://github.com/anthropics/skills.git\n"
-                    "claude plugin install example-skills@anthropic-agent-skills\n```\n"
-                    "(`example-skills` brings a dozen of Anthropic's example skills, this one included.)")
+        code.append("When you ask Claude Code to get all the skills from this pack, it installs this one too. "
+                    "To get just this one, ask for it by name.")
     else:
         mkt = s["plugin"]["marketplace"]
-        app.append(f"Works in Cowork and the Claude app. Open **Customize > Plugins**, find **{name}** from Anthropic and install it. "
+        app.append(f"Works in Cowork and the Claude app. Open **Customize > Plugins**, find **{name}** in Anthropic's plugins and install it. "
                    f"If it isn't listed, choose **Add > Add marketplace**, enter `{mkt}`, then install **{name}**.")
         code.append(f"```\nclaude plugin marketplace add https://github.com/{mkt}.git\nclaude plugin install {name}@knowledge-work-plugins\n```")
     return app, code
@@ -96,8 +97,8 @@ def readme_list():
 def credits():
     out = ["# Credits", "",
            "Every skill in this pack belongs to the people below. We link to their work and describe it in our own words; "
-           "we don't copy or re-host any of it. When Claude fetches a skill for you, it downloads it from the author's repo "
-           "and keeps the author's licence file with it.", ""]
+           "we don't copy or re-host any of it. When Claude fetches a skill for you, it downloads it from the author's repo. "
+           "Zips and skill folders it makes keep the author's licence file inside.", ""]
     by_author = {}
     for s in M["skills"]:
         by_author.setdefault((s["author"], s["author_url"]), []).append(s)
@@ -107,7 +108,7 @@ def credits():
             out.append(f"- **{s['title']}**: [{s['repo']}{'/' + s['path'] if s['path'] else ''}]({source_url(s)}), {s['license']}")
         out.append("")
     out += ["## Licences in brief", "",
-            "- **MIT** and **Apache-2.0**: free to use, change and share, as long as the copyright and licence notice go with it. That's why every fetched skill keeps its LICENSE file.",
+            "- **MIT** and **Apache-2.0**: free to use, change and share, as long as the copyright and licence notice go with it. That's why the zips and skill folders Claude makes keep the author's LICENSE file.",
             "- **Anthropic's Word, Excel, PowerPoint and PDF skills** are source-available, not open source. Use them inside Claude, where Anthropic provides them. Don't download or share copies.", ""]
     return "\n".join(out)
 

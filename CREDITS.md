@@ -1,6 +1,6 @@
 # Credits
 
-Every skill in this pack belongs to the people below. We link to their work and describe it in our own words; we don't copy or re-host any of it. When Claude fetches a skill for you, it downloads it from the author's repo and keeps the author's licence file with it.
+Every skill in this pack belongs to the people below. We link to their work and describe it in our own words; we don't copy or re-host any of it. When Claude fetches a skill for you, it downloads it from the author's repo. Zips and skill folders it makes keep the author's licence file inside.
 
 ## [Siqi Chen](https://github.com/blader)
 
@@ -44,11 +44,11 @@ Every skill in this pack belongs to the people below. We link to their work and 
 - **Small Business (plugin)**: [anthropics/knowledge-work-plugins/small-business](https://github.com/anthropics/knowledge-work-plugins/tree/main/small-business), Apache-2.0
 - **Product Management (plugin)**: [anthropics/knowledge-work-plugins/product-management](https://github.com/anthropics/knowledge-work-plugins/tree/main/product-management), Apache-2.0
 
-## [Tribe AI, published in Anthropic's plugin collection](https://github.com/anthropics/knowledge-work-plugins/tree/main/partner-built/brand-voice)
+## [Tribe AI](https://www.tribe.ai)
 
 - **Brand Voice (plugin)**: [anthropics/knowledge-work-plugins/partner-built/brand-voice](https://github.com/anthropics/knowledge-work-plugins/tree/main/partner-built/brand-voice), Apache-2.0
 
 ## Licences in brief
 
-- **MIT** and **Apache-2.0**: free to use, change and share, as long as the copyright and licence notice go with it. That's why every fetched skill keeps its LICENSE file.
+- **MIT** and **Apache-2.0**: free to use, change and share, as long as the copyright and licence notice go with it. That's why the zips and skill folders Claude makes keep the author's LICENSE file.
 - **Anthropic's Word, Excel, PowerPoint and PDF skills** are source-available, not open source. Use them inside Claude, where Anthropic provides them. Don't download or share copies.

@@ -23,7 +23,7 @@ Build a first-week onboarding plan for a new warehouse supervisor.
 
 **Claude app (chat and Cowork)**
 
-- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **human-resources** from Anthropic and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **human-resources**.
+- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **human-resources** in Anthropic's plugins and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **human-resources**.
 
 **Claude Code**
 

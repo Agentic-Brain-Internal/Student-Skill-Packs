@@ -23,7 +23,7 @@ Plan a spring campaign for our trade customers: goals, channels, timeline and fi
 
 **Claude app (chat and Cowork)**
 
-- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **marketing** from Anthropic and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **marketing**.
+- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **marketing** in Anthropic's plugins and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **marketing**.
 
 **Claude Code**
 

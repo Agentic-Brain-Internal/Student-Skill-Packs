@@ -7,20 +7,22 @@ This repo holds **no skill files**. `skills.json` lists where each skill lives i
 ## 1. Work out what to get
 
 - Read `skills.json` (in the repo root; if you only have the GitHub link, fetch `https://github.com/OWNER/claude-skill-pack` with git or read the file through the GitHub page).
-- "All the skills", "everything", "the pack" means every entry with `"group": "core"`.
+- "All the skills", "everything", "the pack" means every entry with `"group": "core"`. In Claude Code it also means the `"group": "builtin"` entries, because Claude Code doesn't come with them (step 3).
 - If the student names skills, match them to `id` or `name`. Tell them about any name you can't match.
-- `"group": "builtin"` entries are already part of the Claude app; you only install them in Claude Code (step 3).
+- `"group": "builtin"` entries are already part of the Claude app. You only install them in Claude Code.
 - `"group": "role-packs"` entries are optional Anthropic plugins for a job role. Don't install them unless the student asks. At the end, mention they exist and point to the README.
-- Never download or copy entries with `"fetch": false` yourself. The Word, Excel, PowerPoint and PDF skills have a licence that forbids copies outside Anthropic's services, and the role packs are installed as plugins.
+- Never download or copy entries with `"fetch": false` yourself. The Word, Excel, PowerPoint and PDF skills have a licence that forbids copies outside Anthropic's services, so in Claude Code they come only through Anthropic's own plugin marketplace (step 3). Role packs are installed as plugins too.
 
 ## 2. Work out where you are
 
 | You are in | How to tell | Go to |
 |---|---|---|
-| Claude Code | You can run shell commands on the student's own computer and a `claude` command exists | Step 3 |
+| Claude Code (terminal, desktop app or IDE) | You run shell commands on the student's own computer, and it has a `~/.claude` folder | Step 3 |
 | Cowork | You run in a sandbox with a folder the student shared with you | Step 4 |
 | Claude chat (claude.ai or desktop) with code execution | You have a code sandbox but no folder of the student's | Step 4 |
 | Claude chat with no code execution | You can't run code | Step 5 |
+
+Claude Code on the web runs in a temporary cloud machine, so anything you install there lasts only for that session. Tell the student, and suggest the Claude app or Claude Code on their own computer.
 
 ## 3. Claude Code: install the skills
 
@@ -33,16 +35,22 @@ claude plugin install <name>@agentic-brain-skill-pack
 
 Run the install line once per chosen skill, using each entry's `plugin.name`. Use the full `https://` URL: the `owner/repo` short form clones over SSH and fails on most computers. If you were given a local path to this repo instead of a URL, use that path in `marketplace add`.
 
-Then the builtin skills, which Claude Code doesn't have on its own:
+Then the builtin skills, which Claude Code doesn't have on its own. The Word, Excel, PowerPoint and PDF skills come from Anthropic's marketplace:
 
 ```
 claude plugin marketplace add https://github.com/anthropics/skills.git
 claude plugin install document-skills@anthropic-agent-skills
 ```
 
-and for `skill-creator`, run `python tools/get_skills.py install --only skill-creator` from the repo (or install `example-skills@anthropic-agent-skills` if Python isn't available).
+On Windows the first line can fail with "Filename too long". Ask the student before changing their git settings, then run `git config --global core.longpaths true` (a standard Windows git setting for long file paths) and try again.
 
-**If the `claude plugin` commands aren't available or fail**, install the skills as folders instead. From a copy of this repo:
+`skill-creator` goes in as a folder. If you don't have a local copy of this repo, clone it to a temporary folder first (`git clone --depth 1 https://github.com/OWNER/claude-skill-pack.git`), then:
+
+```
+python <repo>/tools/get_skills.py install --only skill-creator
+```
+
+**If the `claude` command isn't on the PATH, or the `claude plugin` commands fail**, install the skills as folders instead. From a copy of this repo:
 
 ```
 python tools/get_skills.py install --groups core,builtin
@@ -59,7 +67,7 @@ Tell the student to start a new session (or run `/reload-plugins`) to use them.
 The Claude app can't install a skill from inside a conversation. The student has to upload it. Your job is to hand them one ready-to-upload zip per skill.
 
 1. Check you can reach GitHub: `git ls-remote https://github.com/blader/humanizer.git HEAD`.
-   - If that fails, stop. Tell the student their account doesn't let Claude reach GitHub. They can ask whoever runs their company's Claude account to allow github.com (Organization settings > Capabilities), use the plugin route below, or ask in Claude Code.
+   - If that fails, stop. Tell the student their account doesn't let Claude reach GitHub. They can use the plugin route below, ask whoever runs their company's Claude account to allow github.com (Organization settings > Capabilities), or ask in Claude Code on their own computer.
 2. Get this repo: `git clone --depth 1 https://github.com/OWNER/claude-skill-pack.git`
 3. Build the zips. In Cowork, put them in the student's folder. In chat, put them wherever you place files for the student to download (for example `/mnt/user-data/outputs`).
    ```
@@ -89,14 +97,14 @@ Suggest they switch on **Code execution and file creation** in Settings > Capabi
 
 Finish with a short table: each skill, done or not, and why not if not. Then tell the student:
 
-- the next step for their surface (start a new session, or upload the zips);
-- that `skill-creator` and the Word/Excel/PowerPoint/PDF skills are already in the Claude app (switch on skill-creator in Customize > Skills);
+- the next step: in Claude Code, start a new session (or run `/reload-plugins`); in the app, upload the zips;
+- in the app only: `skill-creator` and the Word/Excel/PowerPoint/PDF skills are already there (switch on skill-creator in Customize > Skills);
 - that role packs exist for sales, marketing, HR, finance, legal, operations and more, if they want one for their job.
 
 ## Rules
 
 - Download only from the sources in `skills.json`. Don't substitute a different repo, fork or version you find elsewhere.
-- Keep every author's licence file with their skill. Don't edit skill contents.
+- When you make a zip or a skill folder, keep the author's licence file in it (the script does this). Don't edit skill contents.
 - Don't run any script that comes inside a downloaded skill while installing. Installing a skill only means copying files.
 - If a source repo is gone, renamed or no longer has the skill at its `path`, skip that skill and report it. Don't look for a replacement.
-- Exception for uploads: if the Claude app rejects a zip because of a frontmatter field (for example a top-level `version:` in `prompt-master`), tell the student what the error says and offer to make a copy with that one field moved under `metadata:`. Change nothing else.
+- One exception to "don't edit": if the Claude app rejects a zip because of a frontmatter field (for example a top-level `version:` in `prompt-master`), tell the student what the error says and offer to make them a local copy with only that field moved under `metadata:`, licence file kept. Change nothing else.
