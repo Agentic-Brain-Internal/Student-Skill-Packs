@@ -58,6 +58,9 @@ Writing, marketing and everyday skills. When you ask Claude to get all the skill
 | [Theme Factory](skills/theme-factory.md) | Gives decks, documents and pages a consistent look. | [Anthropic](https://github.com/anthropics/skills/tree/main/skills/theme-factory) | Apache-2.0 |
 | [Canvas Design](skills/canvas-design.md) | Makes one-page visual pieces as PNG or PDF: posters, flyers, simple graphics. | [Anthropic](https://github.com/anthropics/skills/tree/main/skills/canvas-design) | Apache-2.0 |
 | [Discernment Nudge](skills/discernment-nudge.md) | After Claude gives you an answer you might act on (advice, a plan, numbers, a claim), it adds two or three short questions to help you check it: what to verify, where the reasoning could be weak, what context it might be missing. | [Anthropic](https://github.com/anthropics/skills/tree/main/skills/discernment-nudge) | Apache-2.0 |
+| [Weekly Review](skills/weekly-review.md) | Walks you through a weekly review based on David Allen's Getting Things Done: clear out loose notes and inboxes, check your task lists, calendar and the things you're waiting on, then look ahead. | [Alireza Rezvani](https://github.com/alirezarezvani/claude-skills/tree/main/productivity/weekly-review/skills/weekly-review) | MIT |
+| [Diagram Design](skills/diagram-design.md) | Draws clean, branded diagrams: flowcharts, process maps with swimlanes, org charts, timelines, Gantt charts, customer journeys, funnels, two-by-two grids and simple charts. | [Cathryn Lavery](https://github.com/cathrynlavery/diagram-design/tree/main/skills/diagram-design) | MIT |
+| [PowerPoint Template Creator](skills/ppt-template-creator.md) | Turns your company's PowerPoint template into a skill of its own. | [Anthropic](https://github.com/anthropics/financial-services/tree/main/plugins/vertical-plugins/financial-analysis/skills/ppt-template-creator) | Apache-2.0 |
 
 ### Already in Claude
 

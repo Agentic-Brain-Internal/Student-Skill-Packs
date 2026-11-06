@@ -107,4 +107,4 @@ Finish with a short table: each skill, done or not, and why not if not. Then tel
 - When you make a zip or a skill folder, keep the author's licence file in it (the script does this). Don't edit skill contents.
 - Don't run any script that comes inside a downloaded skill while installing. Installing a skill only means copying files.
 - If a source repo is gone, renamed or no longer has the skill at its `path`, skip that skill and report it. Don't look for a replacement.
-- One exception to "don't edit": if the Claude app rejects a zip because of a frontmatter field (for example a top-level `version:` in `prompt-master`), tell the student what the error says and offer to make them a local copy with only that field moved under `metadata:`, licence file kept. Change nothing else.
+- One exception to "don't edit": if the Claude app rejects a zip because of a frontmatter field (for example a top-level `version:` in `prompt-master` or `argument-hint:` in `weekly-review`), tell the student what the error says and offer to make them a local copy with only that field moved under `metadata:`, licence file kept. Change nothing else.

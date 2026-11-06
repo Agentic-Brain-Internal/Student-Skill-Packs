@@ -1,6 +1,6 @@
 {
   "pack": "Agentic Brain Claude Skill Pack",
-  "pack_version": "1.0.0",
+  "pack_version": "1.1.0",
   "updated": "2026-11-06",
   "repo": "Agentic-Brain-Internal/Student-Skill-Packs",
   "notes": "This file lists skills that live in other people's GitHub repos. Nothing here is a copy. Each entry says where the skill lives, who made it, its licence, and how to get it on each Claude surface. INSTALL-FOR-CLAUDE.md explains the fields.",
@@ -460,6 +460,86 @@
       ],
       "try": "Estimate how many extra delivery drivers we need if orders go up 20% in spring.",
       "notes": "It runs by itself after big answers. Switch it off if you find the questions get in the way."
+    },
+    {
+      "id": "weekly-review",
+      "name": "weekly-review",
+      "title": "Weekly Review",
+      "group": "core",
+      "category": "Everyone",
+      "author": "Alireza Rezvani",
+      "author_url": "https://github.com/alirezarezvani",
+      "repo": "alirezarezvani/claude-skills",
+      "path": "productivity/weekly-review/skills/weekly-review",
+      "ref": "main",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "fetch": true,
+      "plugin": {
+        "marketplace": "Agentic-Brain-Internal/Student-Skill-Packs",
+        "name": "weekly-review"
+      },
+      "summary": "Walks you through a weekly review based on David Allen's Getting Things Done: clear out loose notes and inboxes, check your task lists, calendar and the things you're waiting on, then look ahead. It ends with one clear next action and a health check on how much you've taken on.",
+      "use_when": [
+        "It's Friday afternoon and you want to close the week with nothing hanging over you.",
+        "You've let your task list slide and want to get back on top of it.",
+        "You feel you've said yes to too much and want to see what to drop or hand back."
+      ],
+      "notes": "Part of Alireza Rezvani's large Claude Skills collection on GitHub. It works best when you paste in or attach your task list, calendar and notes. Set aside 60 to 90 minutes.",
+      "try": "Run my weekly review. Here are my task list, this week's calendar and my notes: ..."
+    },
+    {
+      "id": "diagram-design",
+      "name": "diagram-design",
+      "title": "Diagram Design",
+      "group": "core",
+      "category": "Design",
+      "author": "Cathryn Lavery",
+      "author_url": "https://github.com/cathrynlavery",
+      "repo": "cathrynlavery/diagram-design",
+      "path": "skills/diagram-design",
+      "ref": "main",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "fetch": true,
+      "plugin": {
+        "marketplace": "Agentic-Brain-Internal/Student-Skill-Packs",
+        "name": "diagram-design"
+      },
+      "summary": "Draws clean, branded diagrams: flowcharts, process maps with swimlanes, org charts, timelines, Gantt charts, customer journeys, funnels, two-by-two grids and simple charts. It saves them as a web page or image you can drop into a document or deck.",
+      "use_when": [
+        "You need to show how a process works, who hands what to whom.",
+        "You want an org chart or project timeline that looks finished, not hand-drawn.",
+        "A plan is easier to explain as a picture than as paragraphs."
+      ],
+      "notes": "The first time you use it, it asks for your brand colours (you can give it your website address). Keep each diagram to a handful of boxes: it's built to leave things out rather than cram them in.",
+      "try": "Draw a swimlane diagram of our quote-to-invoice process: sales takes the enquiry, ops checks stock, finance raises the invoice ..."
+    },
+    {
+      "id": "ppt-template-creator",
+      "name": "ppt-template-creator",
+      "title": "PowerPoint Template Creator",
+      "group": "core",
+      "category": "Documents",
+      "author": "Anthropic",
+      "author_url": "https://www.anthropic.com",
+      "repo": "anthropics/financial-services",
+      "path": "plugins/vertical-plugins/financial-analysis/skills/ppt-template-creator",
+      "ref": "main",
+      "license": "Apache-2.0",
+      "license_file": "LICENSE",
+      "fetch": true,
+      "plugin": {
+        "marketplace": "Agentic-Brain-Internal/Student-Skill-Packs",
+        "name": "ppt-template-creator"
+      },
+      "summary": "Turns your company's PowerPoint template into a skill of its own. Give it your .pptx or .potx file and it studies the layouts and where everything sits, then builds a skill that makes on-brand decks from that template every time.",
+      "use_when": [
+        "Claude's decks don't match your company look and you want them to.",
+        "You make the same kind of deck often (board packs, client proposals, monthly reviews) and want it on your template without fixing it by hand."
+      ],
+      "notes": "It makes a skill, not a deck. When it's done, upload the new skill like any other (Customize > Skills), then ask for decks as usual. It uses Skill Creator along the way, so switch that on too. It comes from Anthropic's financial-services collection but works for any company template.",
+      "try": "Use the ppt-template-creator skill to turn this template into a skill for our company decks. [attach your .pptx or .potx]"
     },
     {
       "id": "kwp-productivity",

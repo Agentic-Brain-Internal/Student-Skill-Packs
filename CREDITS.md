@@ -33,6 +33,7 @@ Every skill in this pack belongs to the people below. We link to their work and 
 - **Theme Factory**: [anthropics/skills/skills/theme-factory](https://github.com/anthropics/skills/tree/main/skills/theme-factory), Apache-2.0
 - **Canvas Design**: [anthropics/skills/skills/canvas-design](https://github.com/anthropics/skills/tree/main/skills/canvas-design), Apache-2.0
 - **Discernment Nudge**: [anthropics/skills/skills/discernment-nudge](https://github.com/anthropics/skills/tree/main/skills/discernment-nudge), Apache-2.0
+- **PowerPoint Template Creator**: [anthropics/financial-services/plugins/vertical-plugins/financial-analysis/skills/ppt-template-creator](https://github.com/anthropics/financial-services/tree/main/plugins/vertical-plugins/financial-analysis/skills/ppt-template-creator), Apache-2.0
 - **Productivity (plugin)**: [anthropics/knowledge-work-plugins/productivity](https://github.com/anthropics/knowledge-work-plugins/tree/main/productivity), Apache-2.0
 - **Marketing (plugin)**: [anthropics/knowledge-work-plugins/marketing](https://github.com/anthropics/knowledge-work-plugins/tree/main/marketing), Apache-2.0
 - **Sales (plugin)**: [anthropics/knowledge-work-plugins/sales](https://github.com/anthropics/knowledge-work-plugins/tree/main/sales), Apache-2.0
@@ -43,6 +44,14 @@ Every skill in this pack belongs to the people below. We link to their work and 
 - **Legal (plugin)**: [anthropics/knowledge-work-plugins/legal](https://github.com/anthropics/knowledge-work-plugins/tree/main/legal), Apache-2.0
 - **Small Business (plugin)**: [anthropics/knowledge-work-plugins/small-business](https://github.com/anthropics/knowledge-work-plugins/tree/main/small-business), Apache-2.0
 - **Product Management (plugin)**: [anthropics/knowledge-work-plugins/product-management](https://github.com/anthropics/knowledge-work-plugins/tree/main/product-management), Apache-2.0
+
+## [Alireza Rezvani](https://github.com/alirezarezvani)
+
+- **Weekly Review**: [alirezarezvani/claude-skills/productivity/weekly-review/skills/weekly-review](https://github.com/alirezarezvani/claude-skills/tree/main/productivity/weekly-review/skills/weekly-review), MIT
+
+## [Cathryn Lavery](https://github.com/cathrynlavery)
+
+- **Diagram Design**: [cathrynlavery/diagram-design/skills/diagram-design](https://github.com/cathrynlavery/diagram-design/tree/main/skills/diagram-design), MIT
 
 ## [Tribe AI](https://www.tribe.ai)
 

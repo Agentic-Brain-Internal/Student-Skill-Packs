@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Links to public Claude skills picked for the Agentic Brain Claude course. Every plugin here installs straight from its author's own GitHub repo; this marketplace holds no copies.",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
     {
@@ -209,6 +209,57 @@
       "homepage": "https://github.com/anthropics/skills/tree/main/skills/discernment-nudge",
       "license": "Apache-2.0",
       "category": "thinking"
+    },
+    {
+      "name": "weekly-review",
+      "description": "Walks you through a weekly review based on David Allen's Getting Things Done: clear out loose notes and inboxes, check your task lists, calendar and the things you're waiting on, then look ahead.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/alirezarezvani/claude-skills.git",
+        "path": "productivity/weekly-review/skills/weekly-review",
+        "ref": "main"
+      },
+      "author": {
+        "name": "Alireza Rezvani",
+        "url": "https://github.com/alirezarezvani"
+      },
+      "homepage": "https://github.com/alirezarezvani/claude-skills/tree/main/productivity/weekly-review/skills/weekly-review",
+      "license": "MIT",
+      "category": "productivity"
+    },
+    {
+      "name": "diagram-design",
+      "description": "Draws clean, branded diagrams: flowcharts, process maps with swimlanes, org charts, timelines, Gantt charts, customer journeys, funnels, two-by-two grids and simple charts.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/cathrynlavery/diagram-design.git",
+        "path": "skills/diagram-design",
+        "ref": "main"
+      },
+      "author": {
+        "name": "Cathryn Lavery",
+        "url": "https://github.com/cathrynlavery"
+      },
+      "homepage": "https://github.com/cathrynlavery/diagram-design/tree/main/skills/diagram-design",
+      "license": "MIT",
+      "category": "design"
+    },
+    {
+      "name": "ppt-template-creator",
+      "description": "Turns your company's PowerPoint template into a skill of its own.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/financial-services.git",
+        "path": "plugins/vertical-plugins/financial-analysis/skills/ppt-template-creator",
+        "ref": "main"
+      },
+      "author": {
+        "name": "Anthropic",
+        "url": "https://www.anthropic.com"
+      },
+      "homepage": "https://github.com/anthropics/financial-services/tree/main/plugins/vertical-plugins/financial-analysis/skills/ppt-template-creator",
+      "license": "Apache-2.0",
+      "category": "documents"
     }
   ]
 }
