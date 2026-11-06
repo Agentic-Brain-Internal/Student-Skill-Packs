@@ -88,10 +88,13 @@ class Fetcher:
 
     def _git(self, repo, ref, paths, target):
         url = f"https://github.com/{repo}.git"
-        r = self._run(self.git, "clone", "--quiet", "--depth", "1", "--filter=blob:none",
-                      "--no-checkout", "--branch", ref, url, str(target))
+        # core.symlinks=false: a link in someone's repo becomes a small text file,
+        # so it can never point us at a file elsewhere on this computer.
+        r = self._run(self.git, "-c", "core.symlinks=false", "clone", "--quiet", "--depth", "1",
+                      "--filter=blob:none", "--no-checkout", "--branch", ref, url, str(target))
         if r.returncode != 0:
             return False
+        self._run(self.git, "config", "core.symlinks", "false", cwd=target)
         # Only check out the skill folders and licence files we need.
         r = self._run(self.git, "sparse-checkout", "set", "--no-cone", *paths, cwd=target)
         if r.returncode != 0:
@@ -194,12 +197,17 @@ def build(entry, checkout, out_root):
     def ignore(d, names):
         return [n for n in names if n in SKIP_DIRS or (n.startswith(".") and Path(d, n).is_dir())]
 
-    shutil.copytree(src, dest, ignore=ignore)
+    # symlinks=True copies links as links (never their targets); we then delete them.
+    shutil.copytree(src, dest, ignore=ignore, symlinks=True)
+    for p in sorted(dest.rglob("*"), reverse=True):
+        if p.is_symlink():
+            p.unlink()
     # Keep the author's licence with the skill. MIT and Apache both ask for this.
     has_licence = any(p.name.upper().startswith("LICENSE") for p in dest.iterdir())
     lf = entry.get("license_file")
-    if not has_licence and lf and (checkout / lf).exists():
-        shutil.copy2(checkout / lf, dest / "LICENSE.txt")
+    lic = checkout / lf if lf else None
+    if not has_licence and lic and lic.is_file() and not lic.is_symlink():
+        shutil.copy2(lic, dest / "LICENSE.txt")
     return dest
 
 
