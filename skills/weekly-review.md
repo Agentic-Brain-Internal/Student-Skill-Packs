@@ -38,6 +38,8 @@ claude plugin install weekly-review@agentic-brain-skill-pack
 
 Part of Alireza Rezvani's large Claude Skills collection on GitHub. It works best when you paste in or attach your task list, calendar and notes. Set aside 60 to 90 minutes.
 
+Part of the **Your week** set, with Internal Comms. Run your weekly review, then turn what came out of it into the update your manager or team expects.
+
 ---
 
 This page is our own description. The skill belongs to Alireza Rezvani; get it from [the source](https://github.com/alirezarezvani/claude-skills/tree/main/productivity/weekly-review/skills/weekly-review).

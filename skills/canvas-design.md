@@ -38,6 +38,8 @@ claude plugin install canvas-design@agentic-brain-skill-pack
 
 It's the largest download in the pack because of the fonts it carries.
 
+Part of the **Diagrams and visuals** set, with Diagram Design. Diagram Design for processes, org charts and timelines; Canvas Design for posters, flyers and one-page graphics.
+
 ---
 
 This page is our own description. The skill belongs to Anthropic; get it from [the source](https://github.com/anthropics/skills/tree/main/skills/canvas-design).

@@ -37,6 +37,8 @@ claude plugin install ppt-template-creator@agentic-brain-skill-pack
 
 It makes a skill, not a deck. When it's done, upload the new skill like any other (Customize > Skills), then ask for decks as usual. It uses Skill Creator along the way, so switch that on too. It comes from Anthropic's financial-services collection but works for any company template.
 
+Part of the **On-brand decks** set, with Theme Factory. Turn your company's PowerPoint template into a skill, and use Theme Factory to keep colours and fonts consistent on everything else. Switch on Skill Creator for the template step.
+
 ---
 
 This page is our own description. The skill belongs to Anthropic; get it from [the source](https://github.com/anthropics/financial-services/tree/main/plugins/vertical-plugins/financial-analysis/skills/ppt-template-creator).

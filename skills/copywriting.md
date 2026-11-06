@@ -37,6 +37,8 @@ claude plugin install copywriting@agentic-brain-skill-pack
 
 Part of Corey Haines's Marketing Skills collection on GitHub.
 
+Part of the **Website copy** set, with Customer Research and Copy Editing. Find out what customers actually say, write the page in their words, then tighten it. Run them in that order.
+
 ---
 
 This page is our own description. The skill belongs to Corey Haines; get it from [the source](https://github.com/coreyhaines31/marketingskills/tree/main/skills/copywriting).

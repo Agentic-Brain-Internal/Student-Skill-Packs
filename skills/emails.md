@@ -33,6 +33,10 @@ claude plugin marketplace add https://github.com/Agentic-Brain-Internal/Student-
 claude plugin install emails@agentic-brain-skill-pack
 ```
 
+## Good to know
+
+Part of the **Email and social** set, with Social Media. Plan a campaign once, then write the email series and the posts that go with it, so both say the same thing.
+
 ---
 
 This page is our own description. The skill belongs to Corey Haines; get it from [the source](https://github.com/coreyhaines31/marketingskills/tree/main/skills/emails).

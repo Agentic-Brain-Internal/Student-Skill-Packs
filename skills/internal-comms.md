@@ -38,6 +38,8 @@ claude plugin install internal-comms@agentic-brain-skill-pack
 
 Its examples come from Anthropic's own company. Tell it your format once and it will follow yours.
 
+Part of the **Your week** set, with Weekly Review. Run your weekly review, then turn what came out of it into the update your manager or team expects.
+
 ---
 
 This page is our own description. The skill belongs to Anthropic; get it from [the source](https://github.com/anthropics/skills/tree/main/skills/internal-comms).

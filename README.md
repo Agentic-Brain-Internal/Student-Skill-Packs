@@ -62,6 +62,19 @@ Writing, marketing and everyday skills. When you ask Claude to get all the skill
 | [Diagram Design](skills/diagram-design.md) | Draws clean, branded diagrams: flowcharts, process maps with swimlanes, org charts, timelines, Gantt charts, customer journeys, funnels, two-by-two grids and simple charts. | [Cathryn Lavery](https://github.com/cathrynlavery/diagram-design/tree/main/skills/diagram-design) | MIT |
 | [PowerPoint Template Creator](skills/ppt-template-creator.md) | Turns your company's PowerPoint template into a skill of its own. | [Anthropic](https://github.com/anthropics/financial-services/tree/main/plugins/vertical-plugins/financial-analysis/skills/ppt-template-creator) | Apache-2.0 |
 
+### Skill sets
+
+Skills that work well together. Ask for a set by name, for example "Get the Writing that sounds human set from https://github.com/Agentic-Brain-Internal/Student-Skill-Packs".
+
+| Set | Skills | Why together |
+|---|---|---|
+| **Writing that sounds human** | [Stop Slop](skills/stop-slop.md), [Humanizer](skills/humanizer.md) | Stop Slop keeps Claude's new drafts clean as it writes. Humanizer fixes text that already sounds machine-made. Use Stop Slop for anything Claude writes for you, and Humanizer on anything you're handed. |
+| **Website copy** | [Customer Research](skills/customer-research.md), [Copywriting](skills/copywriting.md), [Copy Editing](skills/copy-editing.md) | Find out what customers actually say, write the page in their words, then tighten it. Run them in that order. |
+| **Email and social** | [Email Sequences](skills/emails.md), [Social Media](skills/social.md) | Plan a campaign once, then write the email series and the posts that go with it, so both say the same thing. |
+| **On-brand decks** | [PowerPoint Template Creator](skills/ppt-template-creator.md), [Theme Factory](skills/theme-factory.md) | Turn your company's PowerPoint template into a skill, and use Theme Factory to keep colours and fonts consistent on everything else. Switch on Skill Creator for the template step. |
+| **Diagrams and visuals** | [Diagram Design](skills/diagram-design.md), [Canvas Design](skills/canvas-design.md) | Diagram Design for processes, org charts and timelines; Canvas Design for posters, flyers and one-page graphics. |
+| **Your week** | [Weekly Review](skills/weekly-review.md), [Internal Comms](skills/internal-comms.md) | Run your weekly review, then turn what came out of it into the update your manager or team expects. |
+
 ### Already in Claude
 
 Anthropic's skills that come with the Claude app. In the app there's nothing to download: they're on already, or you switch them on. In Claude Code, Claude installs them for you.

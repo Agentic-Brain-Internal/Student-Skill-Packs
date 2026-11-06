@@ -33,6 +33,10 @@ claude plugin marketplace add https://github.com/Agentic-Brain-Internal/Student-
 claude plugin install copy-editing@agentic-brain-skill-pack
 ```
 
+## Good to know
+
+Part of the **Website copy** set, with Customer Research and Copywriting. Find out what customers actually say, write the page in their words, then tighten it. Run them in that order.
+
 ---
 
 This page is our own description. The skill belongs to Corey Haines; get it from [the source](https://github.com/coreyhaines31/marketingskills/tree/main/skills/copy-editing).

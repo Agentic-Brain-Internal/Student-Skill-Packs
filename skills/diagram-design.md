@@ -38,6 +38,8 @@ claude plugin install diagram-design@agentic-brain-skill-pack
 
 The first time you use it, it asks for your brand colours (you can give it your website address). Keep each diagram to a handful of boxes: it's built to leave things out rather than cram them in.
 
+Part of the **Diagrams and visuals** set, with Canvas Design. Diagram Design for processes, org charts and timelines; Canvas Design for posters, flyers and one-page graphics.
+
 ---
 
 This page is our own description. The skill belongs to Cathryn Lavery; get it from [the source](https://github.com/cathrynlavery/diagram-design/tree/main/skills/diagram-design).

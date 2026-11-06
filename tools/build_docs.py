@@ -23,6 +23,14 @@ GROUP_BLURB = {
 }
 
 
+def sets_with(skill_id):
+    return [st for st in M.get("sets", []) if skill_id in st["skills"]]
+
+
+def title(skill_id):
+    return next(s["title"] for s in M["skills"] if s["id"] == skill_id)
+
+
 def source_url(s):
     base = f"https://github.com/{s['repo']}"
     return f"{base}/tree/{s['ref']}/{s['path']}" if s["path"] else base
@@ -74,8 +82,12 @@ def skill_page(s):
     lines.append("")
     lines += [f"- {a}" for a in app]
     lines += ["", "**Claude Code**", ""] + code
-    if s.get("notes"):
-        lines += ["", "## Good to know", "", s["notes"]]
+    good = [s["notes"]] if s.get("notes") else []
+    for st in sets_with(s["id"]):
+        others = [title(x) for x in st["skills"] if x != s["id"]]
+        good.append(f"Part of the **{st['name']}** set, with {' and '.join(others)}. {st['why']}")
+    if good:
+        lines += ["", "## Good to know", ""] + "\n\n".join(good).split("\n")
     lines += ["", "---", "",
               f"This page is our own description. The skill belongs to {s['author']}; get it from [the source]({source_url(s)}).", ""]
     return "\n".join(lines)
@@ -91,6 +103,15 @@ def readme_list():
             first = s["summary"].split(". ")[0].rstrip(".") + "."
             out.append(f"| [{s['title']}](skills/{s['id']}.md) | {first} | [{s['author'].split(',')[0]}]({source_url(s)}) | {s['license']} |")
         out.append("")
+        if g == "core" and M.get("sets"):
+            out += ["### Skill sets", "",
+                    "Skills that work well together. Ask for a set by name, for example "
+                    f"\"Get the {M['sets'][0]['name']} set from https://github.com/{PACK}\".", "",
+                    "| Set | Skills | Why together |", "|---|---|---|"]
+            for st in M["sets"]:
+                names = ", ".join(f"[{title(x)}](skills/{x}.md)" for x in st["skills"])
+                out.append(f"| **{st['name']}** | {names} | {st['why']} |")
+            out.append("")
     return "\n".join(out).rstrip() + "\n"
 
 

@@ -9,6 +9,7 @@ This repo holds **no skill files**. `skills.json` lists where each skill lives i
 - Read `skills.json` (in the repo root; if you only have the GitHub link, fetch `https://github.com/Agentic-Brain-Internal/Student-Skill-Packs` with git or read the file through the GitHub page).
 - "All the skills", "everything", "the pack" means every entry with `"group": "core"`. In Claude Code it also means the `"group": "builtin"` entries, because Claude Code doesn't come with them (step 3).
 - If the student names skills, match them to `id` or `name`. Tell them about any name you can't match.
+- If the student names a skill set (the `sets` list in `skills.json`, for example "Website copy"), get every skill in that set.
 - `"group": "builtin"` entries are already part of the Claude app. You only install them in Claude Code.
 - `"group": "role-packs"` entries are optional Anthropic plugins for a job role. Don't install them unless the student asks. At the end, mention they exist and point to the README.
 - Never download or copy entries with `"fetch": false` yourself. The Word, Excel, PowerPoint and PDF skills have a licence that forbids copies outside Anthropic's services, so in Claude Code they come only through Anthropic's own plugin marketplace (step 3). Role packs are installed as plugins too.

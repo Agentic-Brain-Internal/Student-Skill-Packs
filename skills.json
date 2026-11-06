@@ -1,6 +1,6 @@
 {
   "pack": "Agentic Brain Claude Skill Pack",
-  "pack_version": "1.1.0",
+  "pack_version": "1.2.0",
   "updated": "2026-11-06",
   "repo": "Agentic-Brain-Internal/Student-Skill-Packs",
   "notes": "This file lists skills that live in other people's GitHub repos. Nothing here is a copy. Each entry says where the skill lives, who made it, its licence, and how to get it on each Claude surface. INSTALL-FOR-CLAUDE.md explains the fields.",
@@ -9,6 +9,63 @@
     "builtin": "Anthropic skills that are already part of the Claude app. Switch them on; nothing to download.",
     "role-packs": "Anthropic plugins for a job role. Optional: install only the one for your job."
   },
+  "sets": [
+    {
+      "id": "human-writing",
+      "name": "Writing that sounds human",
+      "skills": [
+        "stop-slop",
+        "humanizer"
+      ],
+      "why": "Stop Slop keeps Claude's new drafts clean as it writes. Humanizer fixes text that already sounds machine-made. Use Stop Slop for anything Claude writes for you, and Humanizer on anything you're handed."
+    },
+    {
+      "id": "website-copy",
+      "name": "Website copy",
+      "skills": [
+        "customer-research",
+        "copywriting",
+        "copy-editing"
+      ],
+      "why": "Find out what customers actually say, write the page in their words, then tighten it. Run them in that order."
+    },
+    {
+      "id": "email-and-social",
+      "name": "Email and social",
+      "skills": [
+        "emails",
+        "social"
+      ],
+      "why": "Plan a campaign once, then write the email series and the posts that go with it, so both say the same thing."
+    },
+    {
+      "id": "on-brand-decks",
+      "name": "On-brand decks",
+      "skills": [
+        "ppt-template-creator",
+        "theme-factory"
+      ],
+      "why": "Turn your company's PowerPoint template into a skill, and use Theme Factory to keep colours and fonts consistent on everything else. Switch on Skill Creator for the template step."
+    },
+    {
+      "id": "diagrams-and-visuals",
+      "name": "Diagrams and visuals",
+      "skills": [
+        "diagram-design",
+        "canvas-design"
+      ],
+      "why": "Diagram Design for processes, org charts and timelines; Canvas Design for posters, flyers and one-page graphics."
+    },
+    {
+      "id": "your-week",
+      "name": "Your week",
+      "skills": [
+        "weekly-review",
+        "internal-comms"
+      ],
+      "why": "Run your weekly review, then turn what came out of it into the update your manager or team expects."
+    }
+  ],
   "skills": [
     {
       "id": "humanizer",

@@ -38,6 +38,8 @@ claude plugin install theme-factory@agentic-brain-skill-pack
 
 For your own company's look, build a brand skill instead (Lesson 7, Demo 4).
 
+Part of the **On-brand decks** set, with PowerPoint Template Creator. Turn your company's PowerPoint template into a skill, and use Theme Factory to keep colours and fonts consistent on everything else. Switch on Skill Creator for the template step.
+
 ---
 
 This page is our own description. The skill belongs to Anthropic; get it from [the source](https://github.com/anthropics/skills/tree/main/skills/theme-factory).

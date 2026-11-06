@@ -37,6 +37,8 @@ claude plugin install stop-slop@agentic-brain-skill-pack
 
 Overlaps with humanizer. Stop-slop is stricter and shorter; humanizer explains more.
 
+Part of the **Writing that sounds human** set, with Humanizer. Stop Slop keeps Claude's new drafts clean as it writes. Humanizer fixes text that already sounds machine-made. Use Stop Slop for anything Claude writes for you, and Humanizer on anything you're handed.
+
 ---
 
 This page is our own description. The skill belongs to Hardik Pandya; get it from [the source](https://github.com/hardikpandya/stop-slop).
