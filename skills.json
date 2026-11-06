@@ -1,0 +1,751 @@
+{
+  "pack": "Agentic Brain Claude Skill Pack",
+  "pack_version": "1.0.0",
+  "updated": "2026-11-06",
+  "repo": "OWNER/claude-skill-pack",
+  "notes": "This file lists skills that live in other people's GitHub repos. Nothing here is a copy. Each entry says where the skill lives, who made it, its licence, and how to get it on each Claude surface. INSTALL-FOR-CLAUDE.md explains the fields.",
+  "groups": {
+    "core": "Writing and everyday skills. 'Get all the skills' means this group.",
+    "builtin": "Anthropic skills that are already part of the Claude app. Switch them on; nothing to download.",
+    "role-packs": "Anthropic plugins for a job role. Optional: install only the one for your job."
+  },
+  "skills": [
+    {
+      "id": "humanizer",
+      "name": "humanizer",
+      "title": "Humanizer",
+      "group": "core",
+      "category": "Writing",
+      "author": "Siqi Chen",
+      "author_url": "https://github.com/blader",
+      "repo": "blader/humanizer",
+      "path": "",
+      "ref": "main",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "fetch": true,
+      "plugin": {
+        "marketplace": "OWNER/claude-skill-pack",
+        "name": "humanizer"
+      },
+      "summary": "Rewrites text that sounds like AI wrote it so it reads like a person wrote it, without changing what it says. It works from Wikipedia's guide to the signs of AI writing: forced lists of three, 'it's not X, it's Y' lines, puffed-up claims, stock words and one-line closers.",
+      "use_when": [
+        "You drafted an email, post or report with Claude and it sounds like a chatbot.",
+        "You want to check someone else's draft for AI tells before it goes out."
+      ],
+      "try": "Use the humanizer skill on this draft. Keep the meaning and the facts exactly as they are.",
+      "notes": "Overlaps with stop-slop. Both are good; if Claude picks the wrong one, name the one you want."
+    },
+    {
+      "id": "stop-slop",
+      "name": "stop-slop",
+      "title": "Stop Slop",
+      "group": "core",
+      "category": "Writing",
+      "author": "Hardik Pandya",
+      "author_url": "https://hvpandya.com",
+      "repo": "hardikpandya/stop-slop",
+      "path": "",
+      "ref": "main",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "fetch": true,
+      "plugin": {
+        "marketplace": "OWNER/claude-skill-pack",
+        "name": "stop-slop"
+      },
+      "summary": "A short, strict set of rules for writing that doesn't sound machine-made: cut filler, use active voice, name specific things, vary sentence length, no em dashes. It comes with lists of phrases and sentence shapes to avoid, and scores a draft before handing it back.",
+      "use_when": [
+        "You want Claude to write in a plain, direct voice from the start, not fix it afterwards.",
+        "You're editing a draft and want a checklist-style pass."
+      ],
+      "try": "Write a two-paragraph update to the team about the new delivery schedule. Use the stop-slop rules.",
+      "notes": "Overlaps with humanizer. Stop-slop is stricter and shorter; humanizer explains more."
+    },
+    {
+      "id": "prompt-master",
+      "name": "prompt-master",
+      "title": "Prompt Master",
+      "group": "core",
+      "category": "Prompting",
+      "author": "Nidhin Joseph Nelson",
+      "author_url": "https://github.com/nidhinjs",
+      "repo": "nidhinjs/prompt-master",
+      "path": "",
+      "ref": "main",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "fetch": true,
+      "plugin": {
+        "marketplace": "OWNER/claude-skill-pack",
+        "name": "prompt-master"
+      },
+      "summary": "Writes a tight, ready-to-paste prompt for another AI tool: ChatGPT, Gemini, Midjourney, an image or video tool, and so on. It works out which tool you're aiming at and what you actually want, asks only what it needs, and hands back one prompt.",
+      "use_when": [
+        "You need a prompt for a different AI tool and don't know how that tool likes to be asked.",
+        "A prompt you use keeps giving you the wrong thing and you want it fixed."
+      ],
+      "try": "Write me a prompt for Midjourney: a photo-style image of a builders' merchant yard at sunrise for our website banner.",
+      "notes": "It only switches on when you ask it to write or fix a prompt, so it stays out of the way otherwise."
+    },
+    {
+      "id": "copywriting",
+      "name": "copywriting",
+      "title": "Copywriting",
+      "group": "core",
+      "category": "Marketing",
+      "author": "Corey Haines",
+      "author_url": "https://corey.co",
+      "repo": "coreyhaines31/marketingskills",
+      "path": "skills/copywriting",
+      "ref": "main",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "fetch": true,
+      "plugin": {
+        "marketplace": "OWNER/claude-skill-pack",
+        "name": "copywriting"
+      },
+      "summary": "Writes marketing copy for web pages: home page, landing page, pricing, product and about pages. It asks who the page is for and what they should do next, then writes headlines, sections and calls to action, with options to choose from.",
+      "use_when": [
+        "You're writing or rewriting a page on your website.",
+        "You have a page that gets visits but not enquiries and want fresh copy to test."
+      ],
+      "try": "Use the copywriting skill to rewrite the hero section of our trade-account page. Here's the current text: ...",
+      "notes": "Part of Corey Haines's Marketing Skills collection. We list five of its skills; the full set of over 50 is in his repo."
+    },
+    {
+      "id": "copy-editing",
+      "name": "copy-editing",
+      "title": "Copy Editing",
+      "group": "core",
+      "category": "Marketing",
+      "author": "Corey Haines",
+      "author_url": "https://corey.co",
+      "repo": "coreyhaines31/marketingskills",
+      "path": "skills/copy-editing",
+      "ref": "main",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "fetch": true,
+      "plugin": {
+        "marketplace": "OWNER/claude-skill-pack",
+        "name": "copy-editing"
+      },
+      "summary": "Edits copy you already have instead of starting over. It goes through the text in several passes (clarity, voice, proof, specifics, flow) and tells you what it changed and why.",
+      "use_when": [
+        "You have a draft brochure, web page or email and want it tightened.",
+        "Old marketing text needs a refresh but should keep its structure."
+      ],
+      "try": "Copy-edit this product page. Show me the changes as a list before you rewrite it.",
+      "notes": ""
+    },
+    {
+      "id": "emails",
+      "name": "emails",
+      "title": "Email Sequences",
+      "group": "core",
+      "category": "Marketing",
+      "author": "Corey Haines",
+      "author_url": "https://corey.co",
+      "repo": "coreyhaines31/marketingskills",
+      "path": "skills/emails",
+      "ref": "main",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "fetch": true,
+      "plugin": {
+        "marketplace": "OWNER/claude-skill-pack",
+        "name": "emails"
+      },
+      "summary": "Plans and writes a series of emails: welcome emails, follow-ups after a quote, win-back emails for lapsed customers. It sets the order, timing and goal of each email, then writes them.",
+      "use_when": [
+        "You want a set of emails that go out over days or weeks, not a single one.",
+        "You're setting up emails in Mailchimp, HubSpot or similar and need the words."
+      ],
+      "try": "Plan a 4-email follow-up sequence for customers who got a quote but didn't order. Then write email 1.",
+      "notes": ""
+    },
+    {
+      "id": "social",
+      "name": "social",
+      "title": "Social Media",
+      "group": "core",
+      "category": "Marketing",
+      "author": "Corey Haines",
+      "author_url": "https://corey.co",
+      "repo": "coreyhaines31/marketingskills",
+      "path": "skills/social",
+      "ref": "main",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "fetch": true,
+      "plugin": {
+        "marketplace": "OWNER/claude-skill-pack",
+        "name": "social"
+      },
+      "summary": "Writes and plans posts for LinkedIn, X, Instagram, TikTok and Facebook. It knows how each platform differs and can turn one piece of content into a week of posts.",
+      "use_when": [
+        "You need LinkedIn posts from a case study, blog post or announcement.",
+        "You want a simple posting plan for the month."
+      ],
+      "try": "Turn this customer story into three LinkedIn posts for our company page. Different angle for each.",
+      "notes": ""
+    },
+    {
+      "id": "customer-research",
+      "name": "customer-research",
+      "title": "Customer Research",
+      "group": "core",
+      "category": "Marketing",
+      "author": "Corey Haines",
+      "author_url": "https://corey.co",
+      "repo": "coreyhaines31/marketingskills",
+      "path": "skills/customer-research",
+      "ref": "main",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "fetch": true,
+      "plugin": {
+        "marketplace": "OWNER/claude-skill-pack",
+        "name": "customer-research"
+      },
+      "summary": "Turns raw customer material into findings: interview notes, survey answers, reviews, support tickets. It pulls out the problems, wants and exact phrases customers use, so your copy and decisions use their words.",
+      "use_when": [
+        "You have a pile of reviews, survey results or call notes and want the patterns.",
+        "You're about to write marketing copy and want to know how customers describe the problem."
+      ],
+      "try": "Here are 40 customer reviews. Use the customer-research skill: what do customers praise, what do they complain about, and what phrases do they repeat?",
+      "notes": ""
+    },
+    {
+      "id": "skill-creator",
+      "name": "skill-creator",
+      "title": "Skill Creator",
+      "group": "builtin",
+      "category": "Building skills",
+      "author": "Anthropic",
+      "author_url": "https://www.anthropic.com",
+      "repo": "anthropics/skills",
+      "path": "skills/skill-creator",
+      "ref": "main",
+      "license": "Apache-2.0",
+      "license_file": "skills/skill-creator/LICENSE.txt",
+      "fetch": true,
+      "builtin_in_app": "switch-on",
+      "plugin": {
+        "marketplace": "anthropics/skills",
+        "name": "example-skills"
+      },
+      "summary": "Builds new skills with you, and tests and improves the ones you have. It interviews you about the task, writes the skill, and can run it with and without the skill to show the difference.",
+      "use_when": [
+        "You want to turn a task you do every week into a skill (Lesson 7).",
+        "A skill you built isn't doing what you want and needs fixing."
+      ],
+      "try": "I want to build a skill. Interview me about how I write our monthly customer newsletter.",
+      "notes": "In the Claude app it's listed under Customize > Skills as a skill from Anthropic. Switch it on there."
+    },
+    {
+      "id": "docx",
+      "name": "docx",
+      "title": "Word documents",
+      "group": "builtin",
+      "category": "Documents",
+      "author": "Anthropic",
+      "author_url": "https://www.anthropic.com",
+      "repo": "anthropics/skills",
+      "path": "skills/docx",
+      "ref": "main",
+      "license": "Proprietary (source-available)",
+      "license_file": "skills/docx/LICENSE.txt",
+      "fetch": false,
+      "builtin_in_app": "automatic",
+      "plugin": {
+        "marketplace": "anthropics/skills",
+        "name": "document-skills"
+      },
+      "summary": "How Claude makes and edits Word files: headings, tables, page numbers, tracked changes, letterheads. In the Claude app it's already on and loads by itself whenever you ask for a Word document.",
+      "use_when": [
+        "You ask for a report, letter, policy or proposal as a .docx.",
+        "You upload a Word file and want it edited, with changes tracked."
+      ],
+      "try": "Make this into a two-page Word document with a title page and a table of contents.",
+      "notes": "Anthropic's licence for this skill does not allow copies outside Claude. Don't download or re-share it; use it where Anthropic provides it."
+    },
+    {
+      "id": "xlsx",
+      "name": "xlsx",
+      "title": "Excel spreadsheets",
+      "group": "builtin",
+      "category": "Documents",
+      "author": "Anthropic",
+      "author_url": "https://www.anthropic.com",
+      "repo": "anthropics/skills",
+      "path": "skills/xlsx",
+      "ref": "main",
+      "license": "Proprietary (source-available)",
+      "license_file": "skills/xlsx/LICENSE.txt",
+      "fetch": false,
+      "builtin_in_app": "automatic",
+      "plugin": {
+        "marketplace": "anthropics/skills",
+        "name": "document-skills"
+      },
+      "summary": "How Claude reads, cleans and builds spreadsheets with working formulas, formatting and charts. Already on in the Claude app.",
+      "use_when": [
+        "You upload a spreadsheet and want it analysed, fixed or reformatted.",
+        "You want a new tracker, budget or price list as a real Excel file."
+      ],
+      "try": "Build me an Excel tracker for supplier deliveries with a column for days late that calculates itself.",
+      "notes": "Same licence as the Word skill: use it inside Claude, don't copy it."
+    },
+    {
+      "id": "pptx",
+      "name": "pptx",
+      "title": "PowerPoint decks",
+      "group": "builtin",
+      "category": "Documents",
+      "author": "Anthropic",
+      "author_url": "https://www.anthropic.com",
+      "repo": "anthropics/skills",
+      "path": "skills/pptx",
+      "ref": "main",
+      "license": "Proprietary (source-available)",
+      "license_file": "skills/pptx/LICENSE.txt",
+      "fetch": false,
+      "builtin_in_app": "automatic",
+      "plugin": {
+        "marketplace": "anthropics/skills",
+        "name": "document-skills"
+      },
+      "summary": "How Claude makes and edits PowerPoint decks, including working from your own template. Already on in the Claude app.",
+      "use_when": [
+        "You need a deck from notes, a report or a meeting summary.",
+        "You want an existing deck updated or reworked."
+      ],
+      "try": "Turn this quarterly report into a 6-slide PowerPoint for the leadership meeting.",
+      "notes": "Same licence as the Word skill: use it inside Claude, don't copy it."
+    },
+    {
+      "id": "pdf",
+      "name": "pdf",
+      "title": "PDF files",
+      "group": "builtin",
+      "category": "Documents",
+      "author": "Anthropic",
+      "author_url": "https://www.anthropic.com",
+      "repo": "anthropics/skills",
+      "path": "skills/pdf",
+      "ref": "main",
+      "license": "Proprietary (source-available)",
+      "license_file": "skills/pdf/LICENSE.txt",
+      "fetch": false,
+      "builtin_in_app": "automatic",
+      "plugin": {
+        "marketplace": "anthropics/skills",
+        "name": "document-skills"
+      },
+      "summary": "How Claude reads, splits, merges and fills in PDFs, and pulls text and tables out of them. Already on in the Claude app.",
+      "use_when": [
+        "You need the tables out of a supplier PDF and into a spreadsheet.",
+        "You want PDFs merged, split or a form filled in."
+      ],
+      "try": "Pull the price table out of this PDF catalogue and put it in a spreadsheet.",
+      "notes": "Same licence as the Word skill: use it inside Claude, don't copy it."
+    },
+    {
+      "id": "internal-comms",
+      "name": "internal-comms",
+      "title": "Internal Comms",
+      "group": "core",
+      "category": "Writing",
+      "author": "Anthropic",
+      "author_url": "https://www.anthropic.com",
+      "repo": "anthropics/skills",
+      "path": "skills/internal-comms",
+      "ref": "main",
+      "license": "Apache-2.0",
+      "license_file": "skills/internal-comms/LICENSE.txt",
+      "fetch": true,
+      "builtin_in_app": "check-discover",
+      "plugin": {
+        "marketplace": "OWNER/claude-skill-pack",
+        "name": "internal-comms"
+      },
+      "summary": "Writes the messages that go around a company: status reports, leadership updates, project updates, newsletters, FAQs and incident reports. It comes with example formats, including 'Progress, Plans, Problems' updates.",
+      "use_when": [
+        "You owe your manager a weekly update.",
+        "Something went wrong and you need a clear incident write-up."
+      ],
+      "try": "Write this week's project update in Progress, Plans, Problems format from these notes: ...",
+      "notes": "Its examples come from Anthropic's own company. Tell it your format once and it will follow yours."
+    },
+    {
+      "id": "theme-factory",
+      "name": "theme-factory",
+      "title": "Theme Factory",
+      "group": "core",
+      "category": "Design",
+      "author": "Anthropic",
+      "author_url": "https://www.anthropic.com",
+      "repo": "anthropics/skills",
+      "path": "skills/theme-factory",
+      "ref": "main",
+      "license": "Apache-2.0",
+      "license_file": "skills/theme-factory/LICENSE.txt",
+      "fetch": true,
+      "builtin_in_app": "check-discover",
+      "plugin": {
+        "marketplace": "OWNER/claude-skill-pack",
+        "name": "theme-factory"
+      },
+      "summary": "Gives decks, documents and pages a consistent look. It has ten ready-made colour and font themes, shows them to you as a sample sheet, and can make a new theme to match what you describe.",
+      "use_when": [
+        "Your deck or report works but looks plain.",
+        "You want several documents to look like they belong together."
+      ],
+      "try": "Show me the themes, then apply the one that suits a construction supplier to this deck.",
+      "notes": "For your own company's look, build a brand skill instead (Lesson 7, Demo 4)."
+    },
+    {
+      "id": "canvas-design",
+      "name": "canvas-design",
+      "title": "Canvas Design",
+      "group": "core",
+      "category": "Design",
+      "author": "Anthropic",
+      "author_url": "https://www.anthropic.com",
+      "repo": "anthropics/skills",
+      "path": "skills/canvas-design",
+      "ref": "main",
+      "license": "Apache-2.0",
+      "license_file": "skills/canvas-design/LICENSE.txt",
+      "fetch": true,
+      "builtin_in_app": "check-discover",
+      "plugin": {
+        "marketplace": "OWNER/claude-skill-pack",
+        "name": "canvas-design"
+      },
+      "summary": "Makes one-page visual pieces as PNG or PDF: posters, flyers, simple graphics. It picks a design direction first, then builds the piece to match, with a set of fonts included.",
+      "use_when": [
+        "You need a poster for the staff room or a flyer for an open day.",
+        "You want a simple graphic without opening a design tool."
+      ],
+      "try": "Design an A4 poster for our trade open day on 14 March, 7am to 11am, free breakfast.",
+      "notes": "It's the largest download in the pack because of the fonts it carries."
+    },
+    {
+      "id": "discernment-nudge",
+      "name": "discernment-nudge",
+      "title": "Discernment Nudge",
+      "group": "core",
+      "category": "Thinking",
+      "author": "Anthropic",
+      "author_url": "https://www.anthropic.com",
+      "repo": "anthropics/skills",
+      "path": "skills/discernment-nudge",
+      "ref": "main",
+      "license": "Apache-2.0",
+      "license_file": "skills/discernment-nudge/LICENSE.txt",
+      "fetch": true,
+      "builtin_in_app": "check-discover",
+      "plugin": {
+        "marketplace": "OWNER/claude-skill-pack",
+        "name": "discernment-nudge"
+      },
+      "summary": "After Claude gives you an answer you might act on (advice, a plan, numbers, a claim), it adds two or three short questions to help you check it: what to verify, where the reasoning could be weak, what context it might be missing.",
+      "use_when": [
+        "You use Claude for decisions, estimates or facts you'll repeat to others.",
+        "You're new to AI and want help building the habit of checking its work."
+      ],
+      "try": "Estimate how many extra delivery drivers we need if orders go up 20% in spring.",
+      "notes": "It runs by itself after big answers. Switch it off if you find the questions get in the way."
+    },
+    {
+      "id": "kwp-productivity",
+      "name": "productivity",
+      "title": "Productivity (plugin)",
+      "group": "role-packs",
+      "category": "Everyone",
+      "author": "Anthropic",
+      "author_url": "https://www.anthropic.com",
+      "repo": "anthropics/knowledge-work-plugins",
+      "path": "productivity",
+      "ref": "main",
+      "license": "Apache-2.0",
+      "license_file": "LICENSE",
+      "fetch": false,
+      "plugin": {
+        "marketplace": "anthropics/knowledge-work-plugins",
+        "name": "productivity"
+      },
+      "summary": "Helps you plan the day, keep a task list and build up notes about your work that Claude remembers between sessions. Works best in Cowork, connected to your calendar and email.",
+      "use_when": [
+        "You start each day by working out what matters.",
+        "You want Claude to keep track of people, projects and open tasks for you."
+      ],
+      "try": "/productivity:start",
+      "notes": "A plugin is a bundle of skills (and sometimes connectors). Install it from Customize > Plugins."
+    },
+    {
+      "id": "kwp-brand-voice",
+      "name": "brand-voice",
+      "title": "Brand Voice (plugin)",
+      "group": "role-packs",
+      "category": "Everyone",
+      "author": "Tribe AI, published in Anthropic's plugin collection",
+      "author_url": "https://github.com/anthropics/knowledge-work-plugins/tree/main/partner-built/brand-voice",
+      "repo": "anthropics/knowledge-work-plugins",
+      "path": "partner-built/brand-voice",
+      "ref": "main",
+      "license": "Apache-2.0",
+      "license_file": "LICENSE",
+      "fetch": false,
+      "plugin": {
+        "marketplace": "anthropics/knowledge-work-plugins",
+        "name": "brand-voice"
+      },
+      "summary": "Works out your company's voice from documents you already have (past emails, proposals, call notes), writes brand guidelines from them, then checks new writing against those guidelines.",
+      "use_when": [
+        "Your company has no written style guide and you want one.",
+        "Several people write customer-facing text and it all sounds different."
+      ],
+      "try": "Generate brand voice guidelines from these five proposals and our website text.",
+      "notes": ""
+    },
+    {
+      "id": "kwp-marketing",
+      "name": "marketing",
+      "title": "Marketing (plugin)",
+      "group": "role-packs",
+      "category": "Marketing",
+      "author": "Anthropic",
+      "author_url": "https://www.anthropic.com",
+      "repo": "anthropics/knowledge-work-plugins",
+      "path": "marketing",
+      "ref": "main",
+      "license": "Apache-2.0",
+      "license_file": "LICENSE",
+      "fetch": false,
+      "plugin": {
+        "marketplace": "anthropics/knowledge-work-plugins",
+        "name": "marketing"
+      },
+      "summary": "Campaign plans, content drafts, email sequences, competitor briefs, SEO checks and performance reports, plus a brand review of anything before it goes out.",
+      "use_when": [
+        "Marketing is your job, or a big part of it.",
+        "You want campaign planning and reporting as well as writing."
+      ],
+      "try": "Plan a spring campaign for our trade customers: goals, channels, timeline and first drafts.",
+      "notes": "Overlaps with Corey Haines's marketing skills in the core group. Use one set or the other for writing."
+    },
+    {
+      "id": "kwp-sales",
+      "name": "sales",
+      "title": "Sales (plugin)",
+      "group": "role-packs",
+      "category": "Sales",
+      "author": "Anthropic",
+      "author_url": "https://www.anthropic.com",
+      "repo": "anthropics/knowledge-work-plugins",
+      "path": "sales",
+      "ref": "main",
+      "license": "Apache-2.0",
+      "license_file": "LICENSE",
+      "fetch": false,
+      "plugin": {
+        "marketplace": "anthropics/knowledge-work-plugins",
+        "name": "sales"
+      },
+      "summary": "Account research, call prep, call summaries with follow-up emails, pipeline and deal reviews, and outreach drafts. Gets more useful when it's connected to your CRM.",
+      "use_when": [
+        "You prepare for sales calls and write follow-ups.",
+        "You review a pipeline or forecast each week."
+      ],
+      "try": "Prep me for a call with Hendricks Construction tomorrow. Here's what I know: ...",
+      "notes": "The call-summary skill doubles as a meeting-notes skill for any call."
+    },
+    {
+      "id": "kwp-customer-support",
+      "name": "customer-support",
+      "title": "Customer Support (plugin)",
+      "group": "role-packs",
+      "category": "Customer service",
+      "author": "Anthropic",
+      "author_url": "https://www.anthropic.com",
+      "repo": "anthropics/knowledge-work-plugins",
+      "path": "customer-support",
+      "ref": "main",
+      "license": "Apache-2.0",
+      "license_file": "LICENSE",
+      "fetch": false,
+      "plugin": {
+        "marketplace": "anthropics/knowledge-work-plugins",
+        "name": "customer-support"
+      },
+      "summary": "Sorts and prioritises tickets, drafts replies, writes escalation notes and turns solved problems into help articles.",
+      "use_when": [
+        "You answer customer emails or tickets.",
+        "The same questions keep coming in and you want help articles for them."
+      ],
+      "try": "Draft a reply to this complaint and tell me if it should be escalated.",
+      "notes": ""
+    },
+    {
+      "id": "kwp-operations",
+      "name": "operations",
+      "title": "Operations (plugin)",
+      "group": "role-packs",
+      "category": "Operations",
+      "author": "Anthropic",
+      "author_url": "https://www.anthropic.com",
+      "repo": "anthropics/knowledge-work-plugins",
+      "path": "operations",
+      "ref": "main",
+      "license": "Apache-2.0",
+      "license_file": "LICENSE",
+      "fetch": false,
+      "plugin": {
+        "marketplace": "anthropics/knowledge-work-plugins",
+        "name": "operations"
+      },
+      "summary": "Process write-ups, status reports, risk assessments, vendor reviews, change requests and capacity plans.",
+      "use_when": [
+        "You need to write down how a process works so someone else can run it.",
+        "You compare suppliers or plan for a busy season."
+      ],
+      "try": "Write up our goods-in process as a step-by-step document from these notes.",
+      "notes": ""
+    },
+    {
+      "id": "kwp-human-resources",
+      "name": "human-resources",
+      "title": "Human Resources (plugin)",
+      "group": "role-packs",
+      "category": "HR",
+      "author": "Anthropic",
+      "author_url": "https://www.anthropic.com",
+      "repo": "anthropics/knowledge-work-plugins",
+      "path": "human-resources",
+      "ref": "main",
+      "license": "Apache-2.0",
+      "license_file": "LICENSE",
+      "fetch": false,
+      "plugin": {
+        "marketplace": "anthropics/knowledge-work-plugins",
+        "name": "human-resources"
+      },
+      "summary": "Job offers, interview plans, onboarding plans, performance review drafts, policy look-ups and people reports.",
+      "use_when": [
+        "You hire, onboard or review staff.",
+        "People ask you policy questions you answer from the handbook."
+      ],
+      "try": "Build a first-week onboarding plan for a new warehouse supervisor.",
+      "notes": "Check anything about pay, contracts or employment law with a person before you act on it."
+    },
+    {
+      "id": "kwp-finance",
+      "name": "finance",
+      "title": "Finance (plugin)",
+      "group": "role-packs",
+      "category": "Finance",
+      "author": "Anthropic",
+      "author_url": "https://www.anthropic.com",
+      "repo": "anthropics/knowledge-work-plugins",
+      "path": "finance",
+      "ref": "main",
+      "license": "Apache-2.0",
+      "license_file": "LICENSE",
+      "fetch": false,
+      "plugin": {
+        "marketplace": "anthropics/knowledge-work-plugins",
+        "name": "finance"
+      },
+      "summary": "Month-end close, reconciliations, journal entries, variance analysis and financial statements, for in-house finance teams.",
+      "use_when": [
+        "You work in accounts or finance and do a monthly close.",
+        "You need to explain why this month's numbers differ from budget."
+      ],
+      "try": "Explain the main variances between budget and actual in this spreadsheet.",
+      "notes": "Built for accountants. A finance person should check its work."
+    },
+    {
+      "id": "kwp-legal",
+      "name": "legal",
+      "title": "Legal (plugin)",
+      "group": "role-packs",
+      "category": "Legal",
+      "author": "Anthropic",
+      "author_url": "https://www.anthropic.com",
+      "repo": "anthropics/knowledge-work-plugins",
+      "path": "legal",
+      "ref": "main",
+      "license": "Apache-2.0",
+      "license_file": "LICENSE",
+      "fetch": false,
+      "plugin": {
+        "marketplace": "anthropics/knowledge-work-plugins",
+        "name": "legal"
+      },
+      "summary": "Contract review, NDA triage, compliance checks and meeting briefings, for in-house legal teams.",
+      "use_when": [
+        "You review supplier contracts or NDAs before they go to a lawyer.",
+        "You need a quick list of the risky clauses in a document."
+      ],
+      "try": "Review this supplier contract and list the clauses we should push back on.",
+      "notes": "It helps you prepare. It is not legal advice; a lawyer still signs off."
+    },
+    {
+      "id": "kwp-small-business",
+      "name": "small-business",
+      "title": "Small Business (plugin)",
+      "group": "role-packs",
+      "category": "Owners and managers",
+      "author": "Anthropic",
+      "author_url": "https://www.anthropic.com",
+      "repo": "anthropics/knowledge-work-plugins",
+      "path": "small-business",
+      "ref": "main",
+      "license": "Apache-2.0",
+      "license_file": "LICENSE",
+      "fetch": false,
+      "plugin": {
+        "marketplace": "anthropics/knowledge-work-plugins",
+        "name": "small-business"
+      },
+      "summary": "Everyday jobs for owners of small firms: chasing invoices, cash-flow snapshots, proposals, job adverts, review replies, month-end prep and a Monday briefing.",
+      "use_when": [
+        "You run a small business and cover several roles yourself.",
+        "You want one plugin instead of separate sales, finance and HR ones."
+      ],
+      "try": "Give me a cash-flow snapshot from this bank export and list the invoices I should chase.",
+      "notes": "It's a large plugin with many skills. If Claude picks the wrong one, name the one you want."
+    },
+    {
+      "id": "kwp-product-management",
+      "name": "product-management",
+      "title": "Product Management (plugin)",
+      "group": "role-packs",
+      "category": "Product",
+      "author": "Anthropic",
+      "author_url": "https://www.anthropic.com",
+      "repo": "anthropics/knowledge-work-plugins",
+      "path": "product-management",
+      "ref": "main",
+      "license": "Apache-2.0",
+      "license_file": "LICENSE",
+      "fetch": false,
+      "plugin": {
+        "marketplace": "anthropics/knowledge-work-plugins",
+        "name": "product-management"
+      },
+      "summary": "Feature specs, roadmap updates, stakeholder updates, competitor briefs and summaries of user research.",
+      "use_when": [
+        "You own a product or service and write specs or roadmaps.",
+        "You have interview notes or survey results to turn into findings."
+      ],
+      "try": "Write a one-page spec for adding online ordering for trade customers.",
+      "notes": ""
+    }
+  ]
+}

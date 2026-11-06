@@ -1,0 +1,214 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "agentic-brain-skill-pack",
+  "owner": {
+    "name": "Agentic Brain"
+  },
+  "metadata": {
+    "description": "Links to public Claude skills picked for the Agentic Brain Claude course. Every plugin here installs straight from its author's own GitHub repo; this marketplace holds no copies.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "humanizer",
+      "description": "Rewrites text that sounds like AI wrote it so it reads like a person wrote it, without changing what it says.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/blader/humanizer.git",
+        "ref": "main"
+      },
+      "author": {
+        "name": "Siqi Chen",
+        "url": "https://github.com/blader"
+      },
+      "homepage": "https://github.com/blader/humanizer",
+      "license": "MIT",
+      "category": "writing"
+    },
+    {
+      "name": "stop-slop",
+      "description": "A short, strict set of rules for writing that doesn't sound machine-made: cut filler, use active voice, name specific things, vary sentence length, no em dashes.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/hardikpandya/stop-slop.git",
+        "ref": "main"
+      },
+      "author": {
+        "name": "Hardik Pandya",
+        "url": "https://hvpandya.com"
+      },
+      "homepage": "https://github.com/hardikpandya/stop-slop",
+      "license": "MIT",
+      "category": "writing"
+    },
+    {
+      "name": "prompt-master",
+      "description": "Writes a tight, ready-to-paste prompt for another AI tool: ChatGPT, Gemini, Midjourney, an image or video tool, and so on.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nidhinjs/prompt-master.git",
+        "ref": "main"
+      },
+      "author": {
+        "name": "Nidhin Joseph Nelson",
+        "url": "https://github.com/nidhinjs"
+      },
+      "homepage": "https://github.com/nidhinjs/prompt-master",
+      "license": "MIT",
+      "category": "prompting"
+    },
+    {
+      "name": "copywriting",
+      "description": "Writes marketing copy for web pages: home page, landing page, pricing, product and about pages.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/coreyhaines31/marketingskills.git",
+        "path": "skills/copywriting",
+        "ref": "main"
+      },
+      "author": {
+        "name": "Corey Haines",
+        "url": "https://corey.co"
+      },
+      "homepage": "https://github.com/coreyhaines31/marketingskills/tree/main/skills/copywriting",
+      "license": "MIT",
+      "category": "marketing"
+    },
+    {
+      "name": "copy-editing",
+      "description": "Edits copy you already have instead of starting over.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/coreyhaines31/marketingskills.git",
+        "path": "skills/copy-editing",
+        "ref": "main"
+      },
+      "author": {
+        "name": "Corey Haines",
+        "url": "https://corey.co"
+      },
+      "homepage": "https://github.com/coreyhaines31/marketingskills/tree/main/skills/copy-editing",
+      "license": "MIT",
+      "category": "marketing"
+    },
+    {
+      "name": "emails",
+      "description": "Plans and writes a series of emails: welcome emails, follow-ups after a quote, win-back emails for lapsed customers.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/coreyhaines31/marketingskills.git",
+        "path": "skills/emails",
+        "ref": "main"
+      },
+      "author": {
+        "name": "Corey Haines",
+        "url": "https://corey.co"
+      },
+      "homepage": "https://github.com/coreyhaines31/marketingskills/tree/main/skills/emails",
+      "license": "MIT",
+      "category": "marketing"
+    },
+    {
+      "name": "social",
+      "description": "Writes and plans posts for LinkedIn, X, Instagram, TikTok and Facebook.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/coreyhaines31/marketingskills.git",
+        "path": "skills/social",
+        "ref": "main"
+      },
+      "author": {
+        "name": "Corey Haines",
+        "url": "https://corey.co"
+      },
+      "homepage": "https://github.com/coreyhaines31/marketingskills/tree/main/skills/social",
+      "license": "MIT",
+      "category": "marketing"
+    },
+    {
+      "name": "customer-research",
+      "description": "Turns raw customer material into findings: interview notes, survey answers, reviews, support tickets.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/coreyhaines31/marketingskills.git",
+        "path": "skills/customer-research",
+        "ref": "main"
+      },
+      "author": {
+        "name": "Corey Haines",
+        "url": "https://corey.co"
+      },
+      "homepage": "https://github.com/coreyhaines31/marketingskills/tree/main/skills/customer-research",
+      "license": "MIT",
+      "category": "marketing"
+    },
+    {
+      "name": "internal-comms",
+      "description": "Writes the messages that go around a company: status reports, leadership updates, project updates, newsletters, FAQs and incident reports.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/skills.git",
+        "path": "skills/internal-comms",
+        "ref": "main"
+      },
+      "author": {
+        "name": "Anthropic",
+        "url": "https://www.anthropic.com"
+      },
+      "homepage": "https://github.com/anthropics/skills/tree/main/skills/internal-comms",
+      "license": "Apache-2.0",
+      "category": "writing"
+    },
+    {
+      "name": "theme-factory",
+      "description": "Gives decks, documents and pages a consistent look.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/skills.git",
+        "path": "skills/theme-factory",
+        "ref": "main"
+      },
+      "author": {
+        "name": "Anthropic",
+        "url": "https://www.anthropic.com"
+      },
+      "homepage": "https://github.com/anthropics/skills/tree/main/skills/theme-factory",
+      "license": "Apache-2.0",
+      "category": "design"
+    },
+    {
+      "name": "canvas-design",
+      "description": "Makes one-page visual pieces as PNG or PDF: posters, flyers, simple graphics.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/skills.git",
+        "path": "skills/canvas-design",
+        "ref": "main"
+      },
+      "author": {
+        "name": "Anthropic",
+        "url": "https://www.anthropic.com"
+      },
+      "homepage": "https://github.com/anthropics/skills/tree/main/skills/canvas-design",
+      "license": "Apache-2.0",
+      "category": "design"
+    },
+    {
+      "name": "discernment-nudge",
+      "description": "After Claude gives you an answer you might act on (advice, a plan, numbers, a claim), it adds two or three short questions to help you check it: what to verify, where the reasoning could be weak, what context it might be missing.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/skills.git",
+        "path": "skills/discernment-nudge",
+        "ref": "main"
+      },
+      "author": {
+        "name": "Anthropic",
+        "url": "https://www.anthropic.com"
+      },
+      "homepage": "https://github.com/anthropics/skills/tree/main/skills/discernment-nudge",
+      "license": "Apache-2.0",
+      "category": "thinking"
+    }
+  ]
+}
