@@ -110,7 +110,7 @@ class Fetcher:
 
     def _tarball(self, repo, ref, paths, target):
         url = f"https://codeload.github.com/{repo}/tar.gz/{ref}"
-        req = urllib.request.Request(url, headers={"User-Agent": "claude-skill-pack"})
+        req = urllib.request.Request(url, headers={"User-Agent": "Student-Skill-Packs"})
         with urllib.request.urlopen(req, timeout=120) as r:
             data = r.read()
         target.mkdir(parents=True, exist_ok=True)

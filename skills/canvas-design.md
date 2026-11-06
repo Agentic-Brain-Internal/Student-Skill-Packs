@@ -25,12 +25,12 @@ Design an A4 poster for our trade open day on 14 March, 7am to 11am, free breakf
 
 - First look in **Customize > Skills** for it under the skills from Anthropic. If it's there, switch it on and you're done.
 - Otherwise ask Claude to get it for you (see the [README](../README.md#get-the-skills)). Claude makes the file `canvas-design.zip`; upload it in **Customize > Skills > + > Create skill > Upload a skill**, then switch it on.
-- Or install it as a plugin: **Customize > Plugins > Add > Add marketplace**, enter `Agentic-Brain-Internal/claude-skill-pack`, then install **canvas-design**.
+- Or install it as a plugin: **Customize > Plugins > Add > Add marketplace**, enter `Agentic-Brain-Internal/Student-Skill-Packs`, then install **canvas-design**.
 
 **Claude Code**
 
 ```
-claude plugin marketplace add https://github.com/Agentic-Brain-Internal/claude-skill-pack.git
+claude plugin marketplace add https://github.com/Agentic-Brain-Internal/Student-Skill-Packs.git
 claude plugin install canvas-design@agentic-brain-skill-pack
 ```
 

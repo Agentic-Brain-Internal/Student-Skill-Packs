@@ -24,12 +24,12 @@ Plan a 4-email follow-up sequence for customers who got a quote but didn't order
 **Claude app (chat and Cowork)**
 
 - Ask Claude to get it for you (see the [README](../README.md#get-the-skills)). Claude makes the file `emails.zip`; upload it in **Customize > Skills > + > Create skill > Upload a skill**, then switch it on.
-- Or install it as a plugin: **Customize > Plugins > Add > Add marketplace**, enter `Agentic-Brain-Internal/claude-skill-pack`, then install **emails**.
+- Or install it as a plugin: **Customize > Plugins > Add > Add marketplace**, enter `Agentic-Brain-Internal/Student-Skill-Packs`, then install **emails**.
 
 **Claude Code**
 
 ```
-claude plugin marketplace add https://github.com/Agentic-Brain-Internal/claude-skill-pack.git
+claude plugin marketplace add https://github.com/Agentic-Brain-Internal/Student-Skill-Packs.git
 claude plugin install emails@agentic-brain-skill-pack
 ```
 

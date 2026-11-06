@@ -9,7 +9,7 @@ Nothing in here is a copy of someone else's skill. This repo (a folder of files 
 Paste this into Claude:
 
 ```
-Get all the skills from https://github.com/Agentic-Brain-Internal/claude-skill-pack and set them up for me. Follow the instructions in its INSTALL-FOR-CLAUDE.md.
+Get all the skills from https://github.com/Agentic-Brain-Internal/Student-Skill-Packs and set them up for me. Follow the instructions in its INSTALL-FOR-CLAUDE.md.
 ```
 
 What happens next depends on where you ask.
@@ -24,7 +24,7 @@ What happens next depends on where you ask.
 
 **Claude chat (claude.ai or the desktop app).** Same as Cowork: Claude makes the zips and gives them to you to download, then you upload them. Claude needs to be able to reach GitHub for this. If it says it can't, use the plugin route below, or ask whoever runs your company's Claude account to allow github.com (Organization settings > Capabilities).
 
-**Another way: install as plugins.** A plugin marketplace is a list of plugins that Claude can install for you. In the Claude app, open **Customize > Plugins > Add > Add marketplace** and enter `Agentic-Brain-Internal/claude-skill-pack`. Each skill in the core list is there as its own plugin, which installs straight from its author's repo. Install the ones you want.
+**Another way: install as plugins.** A plugin marketplace is a list of plugins that Claude can install for you. In the Claude app, open **Customize > Plugins > Add > Add marketplace** and enter `Agentic-Brain-Internal/Student-Skill-Packs`. Each skill in the core list is there as its own plugin, which installs straight from its author's repo. Install the ones you want.
 
 Uploading skills needs **Code execution and file creation** switched on in **Settings > Capabilities**. It usually is. If you can't switch it on, ask whoever runs your company's Claude account.
 
@@ -33,7 +33,7 @@ Uploading skills needs **Code execution and file creation** switched on in **Set
 Name them:
 
 ```
-Get the humanizer and stop-slop skills from https://github.com/Agentic-Brain-Internal/claude-skill-pack and set them up for me.
+Get the humanizer and stop-slop skills from https://github.com/Agentic-Brain-Internal/Student-Skill-Packs and set them up for me.
 ```
 
 ## The skills

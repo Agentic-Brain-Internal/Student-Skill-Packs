@@ -24,12 +24,12 @@ Here are 40 customer reviews. Use the customer-research skill: what do customers
 **Claude app (chat and Cowork)**
 
 - Ask Claude to get it for you (see the [README](../README.md#get-the-skills)). Claude makes the file `customer-research.zip`; upload it in **Customize > Skills > + > Create skill > Upload a skill**, then switch it on.
-- Or install it as a plugin: **Customize > Plugins > Add > Add marketplace**, enter `Agentic-Brain-Internal/claude-skill-pack`, then install **customer-research**.
+- Or install it as a plugin: **Customize > Plugins > Add > Add marketplace**, enter `Agentic-Brain-Internal/Student-Skill-Packs`, then install **customer-research**.
 
 **Claude Code**
 
 ```
-claude plugin marketplace add https://github.com/Agentic-Brain-Internal/claude-skill-pack.git
+claude plugin marketplace add https://github.com/Agentic-Brain-Internal/Student-Skill-Packs.git
 claude plugin install customer-research@agentic-brain-skill-pack
 ```
 

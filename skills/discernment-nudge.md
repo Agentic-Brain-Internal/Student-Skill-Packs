@@ -25,12 +25,12 @@ Estimate how many extra delivery drivers we need if orders go up 20% in spring.
 
 - First look in **Customize > Skills** for it under the skills from Anthropic. If it's there, switch it on and you're done.
 - Otherwise ask Claude to get it for you (see the [README](../README.md#get-the-skills)). Claude makes the file `discernment-nudge.zip`; upload it in **Customize > Skills > + > Create skill > Upload a skill**, then switch it on.
-- Or install it as a plugin: **Customize > Plugins > Add > Add marketplace**, enter `Agentic-Brain-Internal/claude-skill-pack`, then install **discernment-nudge**.
+- Or install it as a plugin: **Customize > Plugins > Add > Add marketplace**, enter `Agentic-Brain-Internal/Student-Skill-Packs`, then install **discernment-nudge**.
 
 **Claude Code**
 
 ```
-claude plugin marketplace add https://github.com/Agentic-Brain-Internal/claude-skill-pack.git
+claude plugin marketplace add https://github.com/Agentic-Brain-Internal/Student-Skill-Packs.git
 claude plugin install discernment-nudge@agentic-brain-skill-pack
 ```
 
