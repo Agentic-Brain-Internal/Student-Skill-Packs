@@ -76,12 +76,12 @@ The Claude app can't install a skill from inside a conversation. The student has
    ```
    Add `--only a,b` if the student named skills. Each zip holds one folder named after the skill, with `SKILL.md` and the author's licence inside. That's the layout the upload needs.
 4. Give the student the zips, then these steps:
-   1. Open **Customize > Skills**.
-   2. Click **+ > Create skill > Upload a skill** and choose a zip.
+   1. Open **Plugins** in the left sidebar.
+   2. Use the add button there to upload a skill, and choose a zip.
    3. Switch the skill on. Repeat for each zip.
-   - Entries with `"builtin_in_app": "check-discover"` may already be listed under Anthropic's skills in **Customize > Skills**. Say so: if it's there, switch it on and skip that zip.
-   - Upload needs **Settings > Capabilities > Code execution and file creation** on.
-5. Also mention the plugin route as an alternative: **Customize > Plugins > Add > Add marketplace**, enter `Agentic-Brain-Internal/Student-Skill-Packs`, then install each skill.
+   - Entries with `"builtin_in_app": "check-discover"` may already be listed among Anthropic's skills on the **Plugins** page. Say so: if it's there, switch it on and skip that zip.
+   - Upload needs **Settings > Capabilities > Create and edit files** on.
+5. Also mention the plugin route as an alternative: **Plugins > Add > Add marketplace**, enter `Agentic-Brain-Internal/Student-Skill-Packs`, then install each skill.
 
 If you can't offer zip files for download, the plugin route is the way in.
 
@@ -92,14 +92,14 @@ Don't pretend to install anything. Give the student:
 - the plugin route from step 4.5, and
 - the link to the README, which lists every skill with a link to its source.
 
-Suggest they switch on **Code execution and file creation** in Settings > Capabilities and ask you again, or ask in Cowork.
+Suggest they switch on **Create and edit files** in Settings > Capabilities and ask you again, or ask in Cowork.
 
 ## 6. Report back
 
 Finish with a short table: each skill, done or not, and why not if not. Then tell the student:
 
 - the next step: in Claude Code, start a new session (or run `/reload-plugins`); in the app, upload the zips;
-- in the app only: `skill-creator` and the Word/Excel/PowerPoint/PDF skills are already there (switch on skill-creator in Customize > Skills);
+- in the app only: `skill-creator` and the Word/Excel/PowerPoint/PDF skills are already there (switch on skill-creator on the Plugins page);
 - that role packs exist for sales, marketing, HR, finance, legal, operations and more, if they want one for their job.
 
 ## Rules

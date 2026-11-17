@@ -23,7 +23,7 @@ I want to build a skill. Interview me about how I write our monthly customer new
 
 **Claude app (chat and Cowork)**
 
-- Open **Customize > Skills**, find it among the skills from Anthropic, and switch it on.
+- Open the **Plugins** page, find it among the skills from Anthropic, and switch it on.
 
 **Claude Code**
 
@@ -31,7 +31,7 @@ When you ask Claude Code to get all the skills from this pack, it installs this 
 
 ## Good to know
 
-In the Claude app it's listed under Customize > Skills as a skill from Anthropic. Switch it on there.
+In the Claude app it's listed on the Plugins page as a skill from Anthropic. Switch it on there.
 
 ---
 

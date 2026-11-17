@@ -18,15 +18,15 @@ What happens next depends on where you ask.
 
 **Cowork.** Pick a folder for the task first. Claude downloads each skill and saves it as a zip (one compressed file per skill) in that folder. Then upload the zips yourself:
 
-1. Open **Customize > Skills**.
-2. Click **+ > Create skill > Upload a skill** and choose one zip.
+1. Open **Plugins** in the left sidebar.
+2. Use the add button there to upload a skill, and choose one zip.
 3. Switch the skill on. Repeat for each zip.
 
 **Claude chat (claude.ai or the desktop app).** Same as Cowork: Claude makes the zips and gives them to you to download, then you upload them. Claude needs to be able to reach GitHub for this. If it says it can't, use the plugin route below, or ask whoever runs your company's Claude account to allow github.com (Organization settings > Capabilities).
 
-**Another way: install as plugins.** A plugin marketplace is a list of plugins that Claude can install for you. In the Claude app, open **Customize > Plugins > Add > Add marketplace** and enter `Agentic-Brain-Internal/Student-Skill-Packs`. Each skill in the core list is there as its own plugin, which installs straight from its author's repo. Install the ones you want.
+**Another way: install as plugins.** A plugin marketplace is a list of plugins that Claude can install for you. In the Claude app, open **Plugins > Add > Add marketplace** and enter `Agentic-Brain-Internal/Student-Skill-Packs`. Each skill in the core list is there as its own plugin, which installs straight from its author's repo. Install the ones you want.
 
-Uploading skills needs **Code execution and file creation** switched on in **Settings > Capabilities**. It usually is. If you can't switch it on, ask whoever runs your company's Claude account.
+Uploading skills needs **Create and edit files** switched on in **Settings > Capabilities**. It usually is. If you can't switch it on, ask whoever runs your company's Claude account.
 
 ### Only want some?
 
@@ -117,8 +117,8 @@ A few skills in this pack do similar jobs: humanizer and stop-slop both clean up
 
 Authors improve their skills over time.
 
-- **Plugins** update from **Customize > Plugins** (or `claude plugin marketplace update` in Claude Code).
-- **Uploaded zips** don't update by themselves. Ask Claude to get the skills again, delete the old skill in **Customize > Skills**, and upload the new zip.
+- **Plugins** update from the **Plugins** page (or `claude plugin marketplace update` in Claude Code).
+- **Uploaded zips** don't update by themselves. Ask Claude to get the skills again, delete the old skill on the **Plugins** page, and upload the new zip.
 
 ## Before you rely on a skill
 

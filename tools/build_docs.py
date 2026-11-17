@@ -41,15 +41,15 @@ def how_to_get(s):
     app, code = [], []
     if g == "core":
         if s.get("builtin_in_app") == "check-discover":
-            app.append("First look in **Customize > Skills** for it under the skills from Anthropic. If it's there, switch it on and you're done.")
+            app.append("First look on the **Plugins** page for it among the skills from Anthropic. If it's there, switch it on and you're done.")
         lead = "Otherwise ask" if app else "Ask"
         app.append(f"{lead} Claude to get it for you (see the [README](../README.md#get-the-skills)). Claude makes the file `{name}.zip`; "
-                   "upload it in **Customize > Skills > + > Create skill > Upload a skill**, then switch it on.")
-        app.append(f"Or install it as a plugin: **Customize > Plugins > Add > Add marketplace**, enter `{PACK}`, then install **{name}**.")
+                   "upload it from the **Plugins** page (use the add button there to upload a skill), then switch it on.")
+        app.append(f"Or install it as a plugin: **Plugins > Add > Add marketplace**, enter `{PACK}`, then install **{name}**.")
         code.append(f"```\nclaude plugin marketplace add https://github.com/{PACK}.git\nclaude plugin install {name}@{PACK_MKT}\n```")
     elif g == "builtin" and s.get("builtin_in_app") == "automatic":
         app.append("Nothing to do. It's built in and loads by itself when you ask for this kind of file. "
-                   "**Settings > Capabilities > Code execution and file creation** must be on. It usually is; "
+                   "**Settings > Capabilities > Create and edit files** must be on. It usually is; "
                    "if you can't switch it on, ask whoever runs your company's Claude account.")
         code.append("```\nclaude plugin marketplace add https://github.com/anthropics/skills.git\n"
                     "claude plugin install document-skills@anthropic-agent-skills\n```\n"
@@ -57,12 +57,12 @@ def how_to_get(s):
                     "On Windows, if the first line fails with \"Filename too long\", run "
                     "`git config --global core.longpaths true` and try again.")
     elif g == "builtin":
-        app.append("Open **Customize > Skills**, find it among the skills from Anthropic, and switch it on.")
+        app.append("Open the **Plugins** page, find it among the skills from Anthropic, and switch it on.")
         code.append("When you ask Claude Code to get all the skills from this pack, it installs this one too. "
                     "To get just this one, ask for it by name.")
     else:
         mkt = s["plugin"]["marketplace"]
-        app.append(f"Works in Cowork and the Claude app. Open **Customize > Plugins**, find **{name}** in Anthropic's plugins and install it. "
+        app.append(f"Works in Cowork and the Claude app. Open the **Plugins** page, find **{name}** in Anthropic's plugins and install it. "
                    f"If it isn't listed, choose **Add > Add marketplace**, enter `{mkt}`, then install **{name}**.")
         code.append(f"```\nclaude plugin marketplace add https://github.com/{mkt}.git\nclaude plugin install {name}@knowledge-work-plugins\n```")
     return app, code

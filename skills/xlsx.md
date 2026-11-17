@@ -23,7 +23,7 @@ Build me an Excel tracker for supplier deliveries with a column for days late th
 
 **Claude app (chat and Cowork)**
 
-- Nothing to do. It's built in and loads by itself when you ask for this kind of file. **Settings > Capabilities > Code execution and file creation** must be on. It usually is; if you can't switch it on, ask whoever runs your company's Claude account.
+- Nothing to do. It's built in and loads by itself when you ask for this kind of file. **Settings > Capabilities > Create and edit files** must be on. It usually is; if you can't switch it on, ask whoever runs your company's Claude account.
 
 **Claude Code**
 

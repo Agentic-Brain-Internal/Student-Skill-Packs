@@ -23,8 +23,8 @@ Use the ppt-template-creator skill to turn this template into a skill for our co
 
 **Claude app (chat and Cowork)**
 
-- Ask Claude to get it for you (see the [README](../README.md#get-the-skills)). Claude makes the file `ppt-template-creator.zip`; upload it in **Customize > Skills > + > Create skill > Upload a skill**, then switch it on.
-- Or install it as a plugin: **Customize > Plugins > Add > Add marketplace**, enter `Agentic-Brain-Internal/Student-Skill-Packs`, then install **ppt-template-creator**.
+- Ask Claude to get it for you (see the [README](../README.md#get-the-skills)). Claude makes the file `ppt-template-creator.zip`; upload it from the **Plugins** page (use the add button there to upload a skill), then switch it on.
+- Or install it as a plugin: **Plugins > Add > Add marketplace**, enter `Agentic-Brain-Internal/Student-Skill-Packs`, then install **ppt-template-creator**.
 
 **Claude Code**
 
@@ -35,7 +35,7 @@ claude plugin install ppt-template-creator@agentic-brain-skill-pack
 
 ## Good to know
 
-It makes a skill, not a deck. When it's done, upload the new skill like any other (Customize > Skills), then ask for decks as usual. It uses Skill Creator along the way, so switch that on too. It comes from Anthropic's financial-services collection but works for any company template.
+It makes a skill, not a deck. When it's done, upload the new skill like any other (from the Plugins page), then ask for decks as usual. It uses Skill Creator along the way, so switch that on too. It comes from Anthropic's financial-services collection but works for any company template.
 
 Part of the **On-brand decks** set, with Theme Factory. Turn your company's PowerPoint template into a skill, and use Theme Factory to keep colours and fonts consistent on everything else. Switch on Skill Creator for the template step.
 

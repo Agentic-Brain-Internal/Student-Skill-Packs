@@ -23,7 +23,7 @@ Helps you plan the day, keep a task list and build up notes about your work that
 
 **Claude app (chat and Cowork)**
 
-- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **productivity** in Anthropic's plugins and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **productivity**.
+- Works in Cowork and the Claude app. Open the **Plugins** page, find **productivity** in Anthropic's plugins and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **productivity**.
 
 **Claude Code**
 
@@ -34,7 +34,7 @@ claude plugin install productivity@knowledge-work-plugins
 
 ## Good to know
 
-A plugin is a bundle of skills (and sometimes connectors). Install it from Customize > Plugins.
+A plugin is a bundle of skills (and sometimes connectors). Install it from the Plugins page.
 
 ---
 

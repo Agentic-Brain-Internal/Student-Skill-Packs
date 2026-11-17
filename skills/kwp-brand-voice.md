@@ -23,7 +23,7 @@ Generate brand voice guidelines from these five proposals and our website text.
 
 **Claude app (chat and Cowork)**
 
-- Works in Cowork and the Claude app. Open **Customize > Plugins**, find **brand-voice** in Anthropic's plugins and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **brand-voice**.
+- Works in Cowork and the Claude app. Open the **Plugins** page, find **brand-voice** in Anthropic's plugins and install it. If it isn't listed, choose **Add > Add marketplace**, enter `anthropics/knowledge-work-plugins`, then install **brand-voice**.
 
 **Claude Code**
 

@@ -23,9 +23,9 @@ Design an A4 poster for our trade open day on 14 March, 7am to 11am, free breakf
 
 **Claude app (chat and Cowork)**
 
-- First look in **Customize > Skills** for it under the skills from Anthropic. If it's there, switch it on and you're done.
-- Otherwise ask Claude to get it for you (see the [README](../README.md#get-the-skills)). Claude makes the file `canvas-design.zip`; upload it in **Customize > Skills > + > Create skill > Upload a skill**, then switch it on.
-- Or install it as a plugin: **Customize > Plugins > Add > Add marketplace**, enter `Agentic-Brain-Internal/Student-Skill-Packs`, then install **canvas-design**.
+- First look on the **Plugins** page for it among the skills from Anthropic. If it's there, switch it on and you're done.
+- Otherwise ask Claude to get it for you (see the [README](../README.md#get-the-skills)). Claude makes the file `canvas-design.zip`; upload it from the **Plugins** page (use the add button there to upload a skill), then switch it on.
+- Or install it as a plugin: **Plugins > Add > Add marketplace**, enter `Agentic-Brain-Internal/Student-Skill-Packs`, then install **canvas-design**.
 
 **Claude Code**
 

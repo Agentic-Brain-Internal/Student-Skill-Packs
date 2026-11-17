@@ -23,8 +23,8 @@ Turn this customer story into three LinkedIn posts for our company page. Differe
 
 **Claude app (chat and Cowork)**
 
-- Ask Claude to get it for you (see the [README](../README.md#get-the-skills)). Claude makes the file `social.zip`; upload it in **Customize > Skills > + > Create skill > Upload a skill**, then switch it on.
-- Or install it as a plugin: **Customize > Plugins > Add > Add marketplace**, enter `Agentic-Brain-Internal/Student-Skill-Packs`, then install **social**.
+- Ask Claude to get it for you (see the [README](../README.md#get-the-skills)). Claude makes the file `social.zip`; upload it from the **Plugins** page (use the add button there to upload a skill), then switch it on.
+- Or install it as a plugin: **Plugins > Add > Add marketplace**, enter `Agentic-Brain-Internal/Student-Skill-Packs`, then install **social**.
 
 **Claude Code**
 

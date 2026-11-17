@@ -4,7 +4,7 @@
 Nothing in this pack is a copy of anyone's skill. This script downloads each
 skill straight from its author's repo, at the moment you run it, and then
 either installs it into a skills folder (Claude Code) or packs it as a zip
-you can upload in the Claude app (Customize > Skills).
+you can upload in the Claude app (on its Plugins page).
 
 Standard library only. Needs Python 3.8+ and either git or HTTPS access to
 github.com / codeload.github.com.

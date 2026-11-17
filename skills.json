@@ -1,7 +1,7 @@
 {
   "pack": "Agentic Brain Claude Skill Pack",
-  "pack_version": "1.2.0",
-  "updated": "2026-11-06",
+  "pack_version": "1.2.1",
+  "updated": "2026-11-17",
   "repo": "Agentic-Brain-Internal/Student-Skill-Packs",
   "notes": "This file lists skills that live in other people's GitHub repos. Nothing here is a copy. Each entry says where the skill lives, who made it, its licence, and how to get it on each Claude surface. INSTALL-FOR-CLAUDE.md explains the fields.",
   "groups": {
@@ -300,7 +300,7 @@
         "A skill you built isn't doing what you want and needs fixing."
       ],
       "try": "I want to build a skill. Interview me about how I write our monthly customer newsletter.",
-      "notes": "In the Claude app it's listed under Customize > Skills as a skill from Anthropic. Switch it on there."
+      "notes": "In the Claude app it's listed on the Plugins page as a skill from Anthropic. Switch it on there."
     },
     {
       "id": "docx",
@@ -595,7 +595,7 @@
         "Claude's decks don't match your company look and you want them to.",
         "You make the same kind of deck often (board packs, client proposals, monthly reviews) and want it on your template without fixing it by hand."
       ],
-      "notes": "It makes a skill, not a deck. When it's done, upload the new skill like any other (Customize > Skills), then ask for decks as usual. It uses Skill Creator along the way, so switch that on too. It comes from Anthropic's financial-services collection but works for any company template.",
+      "notes": "It makes a skill, not a deck. When it's done, upload the new skill like any other (from the Plugins page), then ask for decks as usual. It uses Skill Creator along the way, so switch that on too. It comes from Anthropic's financial-services collection but works for any company template.",
       "try": "Use the ppt-template-creator skill to turn this template into a skill for our company decks. [attach your .pptx or .potx]"
     },
     {
@@ -622,7 +622,7 @@
         "You want Claude to keep track of people, projects and open tasks for you."
       ],
       "try": "/productivity:start",
-      "notes": "A plugin is a bundle of skills (and sometimes connectors). Install it from Customize > Plugins."
+      "notes": "A plugin is a bundle of skills (and sometimes connectors). Install it from the Plugins page."
     },
     {
       "id": "kwp-brand-voice",
